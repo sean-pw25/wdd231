@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="description"
+        content="My homepage for WDD 231: Web Frontend Development I. Here you can find information about me and view my current projects for this class.">
+    <meta name="author" content="Sean Wood">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--css-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <!--javascript-->
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/home/bird.svg" alt="logo" width="44" height="44">
+        <span>Sean Wood</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle Navigation Menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#" class="current">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="home">
+            <section>
+                <h2>About Me</h2>
+                <p>Hello! My name is Sean Wood. I am currently studying software development through BYU-Pathway
+                    Worldwide. My goal in my academic career is to develop the necessary skills to become a successful
+                    software engineer who can support my future family. I am engaged to be married by the end of this
+                    class. I love computers, video games, and music!</p>
+            </section>
+            <section>
+                <h2>Student Photo</h2>
+                <div class="img-container">
+                    <img src="images/home/sean-wood.jpg" alt="Sean Wood" width="300px" height="300px">
+                </div>
+            </section>
+        </div>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="course-list">
+            </div>
+            <p class="total-credits">Total Credits for Courses Listed: <span id="credits">0</span></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/sean-pw25" target="_blank"><img src="images/home/github.svg"
+                    alt="Sean Wood's Github Page" width="64px" height="64px"></a>
+            <a href="https://www.linkedin.com/in/seanwood-sd/" target="_blank"><img src="images/home/linkedin.svg"
+                    alt="Sean Wood's Linkedin Page" width="64px" height="64px"></a>
+            <a href="https://www.facebook.com/sean.wood.940098" target="_blank"><img src="images/home/facebook.svg"
+                    alt="Sean Wood's Facebook Page" width="64px" height="64px"></a>
+        </div>
+        <div class="page-info">
+            <p><span id="copyright"></span> Sean Wood, Indiana</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
