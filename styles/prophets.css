@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0 5vw;
+    background-image: radial-gradient(#a47c5d, #765841);
+    max-width: 1440px;
+}
+
+header>h1,
+footer {
+    background-image: linear-gradient(#684931, #563f2d);
+    text-align: center;
+    font-size: 2.4rem;
+    padding: .2rem;
+    font-family: "Cinzel", serif;
+    color: #fff;
+}
+
+h2 {
+    font-family: "Cinzel", serif;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: #eee;
+    padding: .2rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+}
+
+#cards>section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#684931, #34261b);
+    margin: 1rem;
+    padding: .5rem;
+    border: 4px solid rgb(0 0 0 / 50%);
+    border-radius: 10px;
+}
+
+#cards>section>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: .5rem solid rgb(125 125 125 / 25%);
+}

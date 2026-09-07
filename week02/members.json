@@ -1,0 +1,33 @@
+{
+    "family_name": "Clifford",
+    "move_in_date": "4/21/2016",
+    "member_count": 5,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Jason Clifford",
+            "gender": "M",
+            "birthdate": "12/4/79"
+        },
+        {
+            "name": "Katie Clifford",
+            "gender": "F",
+            "birthdate": "6/4/78"
+        },
+        {
+            "name": "Curtis Clifford",
+            "gender": "M",
+            "birthdate": "5/12/13"
+        },
+        {
+            "name": "Mandi Clifford",
+            "gender": "F",
+            "birthdate": "2/27/00"
+        },
+        {
+            "name": "Lucy Clifford",
+            "gender": "F",
+            "birthdate": "12/21/07"
+        }
+    ]
+}
