@@ -17,7 +17,7 @@
             "company_phone_number": "317-773-1554",
             "company_email_address": "noblesville@supplywarehouse.com",
             "company_website_url": "https://www.supplywarehouse.com/",
-            "image": "https://sean-pw25.github.io/wdd231/chamber/images/businesses/sw.jpg",
+            "image": "https://sean-pw25.github.io/wdd231/chamber/images/businesses/sw.png",
             "membership_level": 1
         },
         {
@@ -27,7 +27,7 @@
             "company_phone_number": "317-773-6065",
             "company_email_address": "flowers@adrienesflowers.com",
             "company_website_url": "https://www.adrienesflowers.com/",
-            "image": "https://sean-pw25.github.io/wdd231/chamber/images/businesses/afg.webp",
+            "image": "https://sean-pw25.github.io/wdd231/chamber/images/businesses/afg.png",
             "membership_level": 2
         },
         {
@@ -47,7 +47,7 @@
             "company_phone_number": "463-243-1252",
             "company_email_address": "bjsbusiness@bjs.com",
             "company_website_url": "https://www.bjs.com/",
-            "image": "https://sean-pw25.github.io/wdd231/chamber/images/businesses/bjs.svg",
+            "image": "https://sean-pw25.github.io/wdd231/chamber/images/businesses/bjs.png",
             "membership_level": 1
         },
         {
