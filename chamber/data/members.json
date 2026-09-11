@@ -1,0 +1,94 @@
+{
+    "members": [
+        {
+            "company_name": "The Soap Factory",
+            "company_type": "Retail",
+            "company_address": "13185 Harrel Parkway Suite 300 Noblesville, IN 46060",
+            "company_phone_number": "317-420-3188",
+            "company_email_address": "noblesville@thesoapfactory.life",
+            "company_website_url": "https://thesoapfactory.life/",
+            "image": "images/businesses/soap-factory.webp",
+            "membership_level": 3
+        },
+        {
+            "company_name": "Supply Warehouse, Inc.",
+            "company_type": "Retail",
+            "company_address": "15475 Stony Creek Way Noblesville, IN  46060",
+            "company_phone_number": "317-773-1554",
+            "company_email_address": "noblesville@supplywarehouse.com",
+            "company_website_url": "https://www.supplywarehouse.com/",
+            "image": "images/businesses/supply-warehouse-inc.jpg",
+            "membership_level": 1
+        },
+        {
+            "company_name": "Adriene's Flowers & Gifts",
+            "company_type": "Retail",
+            "company_address": "1249 Conner Street Noblesville IN 46060",
+            "company_phone_number": "317-773-6065",
+            "company_email_address": "flowers@adrienesflowers.com",
+            "company_website_url": "https://www.adrienesflowers.com/",
+            "image": "images/businesses/adrienes-flowers-and-gifts.webp",
+            "membership_level": 2
+        },
+        {
+            "company_name": "Kinsey's Floor Covering, Inc",
+            "company_type": "Flooring Services/Retail",
+            "company_address": "16222 Allisonville Road, Noblesville, 46060, US",
+            "company_phone_number": "317-773-2929",
+            "company_email_address": "sales@kinseysfloorcovering.com",
+            "company_website_url": "https://www.kinseysfloorcovering.com/",
+            "image": "images/businesses/kinseys-floor-covering.webp",
+            "membership_level": 3
+        },
+        {
+            "company_name": "Promenade Trails",
+            "company_type": "Senior Care",
+            "company_address": "17780 Navigator Trail Noblesville, IN 46062",
+            "company_phone_number": "463-227-0951",
+            "company_email_address": "care@promenadetrails.com",
+            "company_website_url": "https://www.asccare.com/community/riverwalk-village/",
+            "image": "images/businesses/promenade-trails.png",
+            "membership_level": 1
+        },
+        {
+            "company_name": "Indiana Members Credit Union",
+            "company_type": "Financial Services",
+            "company_address": "9710 Butterfly Drive Noblesville IN 46060",
+            "company_phone_number": "317-554-8105",
+            "company_email_address": "businesslending@imcu.com",
+            "company_website_url": "https://www.imcu.com/",
+            "image": "images/businesses/indiana-members-credit-union.jpg",
+            "membership_level": 3
+        },
+        {
+            "company_name": "Toast The Host",
+            "company_type": "Catering",
+            "company_address": "5720 Pebble Village Lane Suite 130 Noblesville IN 46062",
+            "company_phone_number": "317-752-0172",
+            "company_email_address": "drinkscatering@toastthehost.net",
+            "company_website_url": "https://www.toastthehost.net/",
+            "image": "images/businesses/toast-the-host.avif",
+            "membership_level": 2
+        },
+        {
+            "company_name": "LongHorn Steakhouse",
+            "company_type": "Dining",
+            "company_address": "13455 Tegler Drive Noblesville IN 46060",
+            "company_phone_number": "317-214-6765",
+            "company_email_address": "cater@longhornsteakhouse.com",
+            "company_website_url": "https://www.longhornsteakhouse.com/",
+            "image": "images/businesses/longhorn-steakhouse.png",
+            "membership_level": 2
+        },
+        {
+            "company_name": "Woodford Sathappan McGee Co., LPA",
+            "company_type": "Legal Services",
+            "company_address": "8606 Allisonville Rd, Suite 110 Indianapolis IN 46250",
+            "company_phone_number": "308-203-2023",
+            "company_email_address": "law@wsm-law.com",
+            "company_website_url": "https://wsm-law.com/",
+            "image": "images/businesses/wsm.png",
+            "membership_level": 1
+        }
+    ]
+}
