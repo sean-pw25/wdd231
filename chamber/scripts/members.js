@@ -3,6 +3,16 @@ const listbutton = document.querySelector('#list');
 const display = document.querySelector('#business-card-container');
 const url = 'https://sean-pw25.github.io/wdd231/chamber/data/members.json';
 
+gridbutton.addEventListener('click', () => {
+    display.classList.remove('list');
+    display.classList.add('grid');
+});
+
+listbutton.addEventListener('click', () => {
+    display.classList.remove('grid');
+    display.classList.add('list');
+});
+
 async function getMemberData() {
     try {
         const response = await fetch(url);
@@ -28,27 +38,35 @@ function displayMembers(data) {
         let phone = document.createElement('p');
         let email = document.createElement('p');
         let website = document.createElement('a')
+        let sectionBody = document.createElement('div');
+        let infoContainer = document.createElement('div');
 
-        name.textContent = `${member.company_name}`;
-        type.textContent = `${member.company_type}`;
-        phone.textContent = `${member.company_phone_number}`;
-        email.textContent = `${member.company_phone_number}`;
+        name.textContent = member.company_name;
+        type.textContent = member.company_type;
+        phone.textContent = member.company_phone_number;
+        email.textContent = member.company_email_address;
         website.textContent = 'View Website';
 
-        image.setAttribute('src', member.company_website_url);
+        image.setAttribute('src', member.image);
         image.setAttribute('alt', `${member.company_name} Logo`);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '100');
-        image.setAttribute('height', '100');
-        website.setAttribute('href', `${member.company_website_url}`);
+        website.setAttribute('href', member.company_website_url);
         website.setAttribute('target', '_blank');
+        website.setAttribute('rel', 'noopener');
+        type.classList.add('type');
+        sectionBody.classList.add('body');
+        infoContainer.classList.add('info-container');
+
 
         card.appendChild(name);
         card.appendChild(type);
-        card.appendChild(image);
-        card.appendChild(phone);
-        card.appendChild(email);
-        card.appendChild(website);
+        card.appendChild(sectionBody)
+        sectionBody.appendChild(image);
+        infoContainer.appendChild(phone);
+        infoContainer.appendChild(email);
+        infoContainer.appendChild(website);
+        sectionBody.appendChild(infoContainer);
+        display.appendChild(card);
     });
 }
 

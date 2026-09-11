@@ -7,7 +7,7 @@
             "company_phone_number": "317-420-3188",
             "company_email_address": "noblesville@thesoapfactory.life",
             "company_website_url": "https://thesoapfactory.life/",
-            "image": "images/businesses/soap-factory.webp",
+            "image": "",
             "membership_level": 3
         },
         {
@@ -17,7 +17,7 @@
             "company_phone_number": "317-773-1554",
             "company_email_address": "noblesville@supplywarehouse.com",
             "company_website_url": "https://www.supplywarehouse.com/",
-            "image": "images/businesses/supply-warehouse-inc.jpg",
+            "image": null,
             "membership_level": 1
         },
         {
@@ -27,7 +27,7 @@
             "company_phone_number": "317-773-6065",
             "company_email_address": "flowers@adrienesflowers.com",
             "company_website_url": "https://www.adrienesflowers.com/",
-            "image": "images/businesses/adrienes-flowers-and-gifts.webp",
+            "image": null,
             "membership_level": 2
         },
         {
@@ -37,17 +37,17 @@
             "company_phone_number": "317-773-2929",
             "company_email_address": "sales@kinseysfloorcovering.com",
             "company_website_url": "https://www.kinseysfloorcovering.com/",
-            "image": "images/businesses/kinseys-floor-covering.webp",
+            "image": null,
             "membership_level": 3
         },
         {
-            "company_name": "Promenade Trails",
-            "company_type": "Senior Care",
-            "company_address": "17780 Navigator Trail Noblesville, IN 46062",
-            "company_phone_number": "463-227-0951",
-            "company_email_address": "care@promenadetrails.com",
-            "company_website_url": "https://www.asccare.com/community/riverwalk-village/",
-            "image": "images/businesses/promenade-trails.png",
+            "company_name": "BJ's Wholesale Club",
+            "company_type": "Retail",
+            "company_address": "13210 Tegler Dr, Noblesville, IN 46060",
+            "company_phone_number": "463-243-1252",
+            "company_email_address": "bjsbusiness@bjs.com",
+            "company_website_url": "https://www.bjs.com/",
+            "image": null,
             "membership_level": 1
         },
         {
@@ -57,7 +57,7 @@
             "company_phone_number": "317-554-8105",
             "company_email_address": "businesslending@imcu.com",
             "company_website_url": "https://www.imcu.com/",
-            "image": "images/businesses/indiana-members-credit-union.jpg",
+            "image": null,
             "membership_level": 3
         },
         {
@@ -67,7 +67,7 @@
             "company_phone_number": "317-752-0172",
             "company_email_address": "drinkscatering@toastthehost.net",
             "company_website_url": "https://www.toastthehost.net/",
-            "image": "images/businesses/toast-the-host.avif",
+            "image": null,
             "membership_level": 2
         },
         {
@@ -77,7 +77,7 @@
             "company_phone_number": "317-214-6765",
             "company_email_address": "cater@longhornsteakhouse.com",
             "company_website_url": "https://www.longhornsteakhouse.com/",
-            "image": "images/businesses/longhorn-steakhouse.png",
+            "image": null,
             "membership_level": 2
         },
         {
@@ -87,7 +87,7 @@
             "company_phone_number": "308-203-2023",
             "company_email_address": "law@wsm-law.com",
             "company_website_url": "https://wsm-law.com/",
-            "image": "images/businesses/wsm.png",
+            "image": null,
             "membership_level": 1
         }
     ]

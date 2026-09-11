@@ -154,3 +154,32 @@ footer h3 {
 .social a {
     padding: 1rem;
 }
+
+/* Directory Page */
+.member-display.grid {
+    font-family: var(--main-font);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+
+    section {
+        background-color: var(--background-color);
+        border: 3px solid var(--primary-color);
+        border-radius: 10px;
+    }
+
+    .body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    h2,
+    .type {
+        background-color: var(--primary-color);
+    }
+}
