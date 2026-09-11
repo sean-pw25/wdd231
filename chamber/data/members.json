@@ -7,7 +7,7 @@
             "company_phone_number": "317-420-3188",
             "company_email_address": "noblesville@thesoapfactory.life",
             "company_website_url": "https://thesoapfactory.life/",
-            "image": "images/business-logos/soap-factory.jpg",
+            "image": "./images/business-logos/soap-factory.jpg",
             "membership_level": 3
         },
         {
