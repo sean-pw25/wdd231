@@ -7,7 +7,7 @@
             "company_phone_number": "317-420-3188",
             "company_email_address": "noblesville@thesoapfactory.life",
             "company_website_url": "https://thesoapfactory.life/",
-            "image": "",
+            "image": "images/business-logos/soap-factory.jpg",
             "membership_level": 3
         },
         {
@@ -17,7 +17,7 @@
             "company_phone_number": "317-773-1554",
             "company_email_address": "noblesville@supplywarehouse.com",
             "company_website_url": "https://www.supplywarehouse.com/",
-            "image": null,
+            "image": "images/business-logos/sw.jpg",
             "membership_level": 1
         },
         {
@@ -27,7 +27,7 @@
             "company_phone_number": "317-773-6065",
             "company_email_address": "flowers@adrienesflowers.com",
             "company_website_url": "https://www.adrienesflowers.com/",
-            "image": null,
+            "image": "images/business-logos/afg.webp",
             "membership_level": 2
         },
         {
@@ -37,7 +37,7 @@
             "company_phone_number": "317-773-2929",
             "company_email_address": "sales@kinseysfloorcovering.com",
             "company_website_url": "https://www.kinseysfloorcovering.com/",
-            "image": null,
+            "image": "images/business-logos/kinseys.jpg",
             "membership_level": 3
         },
         {
@@ -47,7 +47,7 @@
             "company_phone_number": "463-243-1252",
             "company_email_address": "bjsbusiness@bjs.com",
             "company_website_url": "https://www.bjs.com/",
-            "image": null,
+            "image": "images/business-logos/bjs.svg",
             "membership_level": 1
         },
         {
@@ -57,7 +57,7 @@
             "company_phone_number": "317-554-8105",
             "company_email_address": "businesslending@imcu.com",
             "company_website_url": "https://www.imcu.com/",
-            "image": null,
+            "image": "images/business-logos/imcu.jpg",
             "membership_level": 3
         },
         {
@@ -67,7 +67,7 @@
             "company_phone_number": "317-752-0172",
             "company_email_address": "drinkscatering@toastthehost.net",
             "company_website_url": "https://www.toastthehost.net/",
-            "image": null,
+            "image": "images/business-logos/tth.png",
             "membership_level": 2
         },
         {
@@ -77,7 +77,7 @@
             "company_phone_number": "317-214-6765",
             "company_email_address": "cater@longhornsteakhouse.com",
             "company_website_url": "https://www.longhornsteakhouse.com/",
-            "image": null,
+            "image": "images/business-logos/ls.jpg",
             "membership_level": 2
         },
         {
@@ -87,7 +87,7 @@
             "company_phone_number": "308-203-2023",
             "company_email_address": "law@wsm-law.com",
             "company_website_url": "https://wsm-law.com/",
-            "image": null,
+            "image": "images/business-logos/wsm.png",
             "membership_level": 1
         }
     ]
