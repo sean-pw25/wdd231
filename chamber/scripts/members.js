@@ -50,6 +50,8 @@ function displayMembers(data) {
         image.setAttribute('src', member.image);
         image.setAttribute('alt', `${member.company_name} Logo`);
         image.setAttribute('loading', 'lazy');
+        image.setAttribute('height', '100');
+        image.setAttribute('width', '100');
         website.setAttribute('href', member.company_website_url);
         website.setAttribute('target', '_blank');
         website.setAttribute('rel', 'noopener');
