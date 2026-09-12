@@ -38,17 +38,17 @@
     /* Directory */
     .list section {
         grid-template-columns: 1fr 1fr 3fr;
+    }
 
-        .business-type {
-            display: block;
-        }
+    .business-type {
+        display: block;
+    }
 
-        div.info-container {
-            grid-template-columns: 2fr 3fr 2fr;
+    .list section div.info-container {
+        grid-template-columns: 2fr 3fr 2fr;
+    }
 
-            .email-list {
-                display: block;
-            }
-        }
+    .email-list {
+        display: block;
     }
 }

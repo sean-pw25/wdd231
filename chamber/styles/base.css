@@ -32,7 +32,7 @@ header {
     margin: 1rem;
 }
 
-header h1 {
+header p {
     font-family: var(--main-font);
     margin: 1rem 1rem 1rem 2rem;
     font-size: 1.4rem;
@@ -166,86 +166,84 @@ footer h2 {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     align-items: center;
     grid-gap: 1rem;
+}
 
-    section {
-        text-align: center;
-        background-color: var(--primary-color);
-        border: 8px solid var(--primary-color);
-        border-radius: 12px;
+.grid section {
+    text-align: center;
+    background-color: var(--primary-color);
+    border: 8px solid var(--primary-color);
+    border-radius: 12px;
+}
 
-        h2 {
-            font-size: 1.2rem;
-            padding: .5rem;
-        }
+.grid section h2 {
+    font-size: 1.2rem;
+    padding: .5rem;
+}
 
-        p,
-        a {
-            font-size: .9rem;
-            padding: .2rem;
-        }
+.grid section p,
+.grid section a {
+    font-size: .9rem;
+    padding: .2rem;
+}
 
-        div.body {
-            padding: 1rem;
-            display: grid;
-            grid-template-columns: auto 1fr;
-            grid-gap: .2rem;
-            background-color: var(--background-color);
-            border-radius: 12px;
-        }
+.grid section div.body {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: .2rem;
+    background-color: var(--background-color);
+    border-radius: 12px;
+}
 
-        div.info-container {
-            text-align: start;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            overflow-wrap: anywhere;
-
-        }
-    }
+.grid section div.info-container {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
 }
 
 .list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+}
 
-    &>* {
-        background-color: var(--background-color);
-    }
+.list>* {
+    background-color: var(--background-color);
+}
 
-    &>*:nth-child(odd) {
-        background-color: #ddd;
-    }
+.list>*:nth-child(odd) {
+    background-color: #ddd;
+}
 
-    h2,
-    p,
-    a {
-        font-size: 1rem;
-        padding: 1rem;
-    }
+.list h2,
+.list p,
+.list a {
+    font-size: 1rem;
+    padding: 1rem;
+}
 
-    section {
-        display: grid;
-        grid-template-columns: 3fr 5fr;
+.list section {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+}
 
-        .business-type {
-            display: none;
-        }
+.business-type {
+    display: none;
+}
 
-        div.info-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+.list section div.info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
-            .email-list {
-                display: none;
-            }
+.email-list {
+    display: none;
+}
 
-        }
-    }
-
-    img {
-        display: none;
-    }
+.list img {
+    display: none;
 }
 
 .member-display a {
