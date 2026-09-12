@@ -43,9 +43,9 @@ function displayMembers(data) {
 
         name.textContent = member.company_name;
         type.textContent = member.company_type;
-        phone.textContent = member.company_phone_number;
-        email.textContent = member.company_email_address;
-        website.textContent = 'View Website';
+        phone.textContent = `Phone: ${member.company_phone_number}`;
+        email.textContent = `Email: ${member.company_email_address}`;
+        website.textContent = `View Website`;
 
         image.setAttribute('src', member.image);
         image.setAttribute('alt', `${member.company_name} Logo`);
@@ -58,6 +58,9 @@ function displayMembers(data) {
         type.classList.add('type');
         sectionBody.classList.add('body');
         infoContainer.classList.add('info-container');
+        email.classList.add('email-list');
+        website.classList.add('website-link');
+        type.classList.add('business-type');
 
 
         card.appendChild(name);
