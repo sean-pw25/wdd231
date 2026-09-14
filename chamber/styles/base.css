@@ -93,8 +93,9 @@ header p {
 .dark-theme-button {
     grid-column: 4 / 5;
     grid-row: 1 / 2;
-    margin: 1rem auto;
+    margin: 1rem;
     cursor: pointer;
+    border-radius: 24px;
 }
 
 main h1 {
@@ -253,4 +254,50 @@ footer h2 {
 
 .website-link::before {
     content: "🌐";
+}
+
+/* DARK MODE */
+
+/* Dark contrast */
+/* site wide */
+.dark header,
+.dark footer,
+.dark footer div,
+.dark a,
+.dark section,
+.dark h2,
+.dark section p,
+.dark button,
+
+/* directory page */
+.dark .list section div.body,
+.dark .list section div.info-container a,
+.dark .list section div.info-container p {
+
+    background-color: #2b2b2b;
+    border-color: #2b2b2b;
+    color: #fff;
+}
+
+/* Lighter Contrast */
+/* site wide */
+.dark,
+.dark main,
+.dark a:hover,
+.dark button:hover,
+.dark a.active,
+.dark div,
+.dark .dark-theme-button,
+
+/* directory page */
+.dark section div.body,
+.dark div.grid section div.info-container,
+.dark section div.info-container p,
+.dark section div.info-container a {
+    background-color: #3c3c3c;
+    color: #fff;
+}
+
+.dark .dark-theme-button {
+    background-color: #d3d3d3
 }
