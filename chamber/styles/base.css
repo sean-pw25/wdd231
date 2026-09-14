@@ -26,6 +26,7 @@ header {
     display: grid;
     grid-template-columns: 44px auto 88px;
     border-bottom: 1px solid #000;
+    overflow: hidden;
 }
 
 .logo {
@@ -93,7 +94,7 @@ header p {
 .dark-theme-button {
     grid-column: 4 / 5;
     grid-row: 1 / 2;
-    margin: 1rem;
+    margin: .8rem .2rem;
     cursor: pointer;
     border-radius: 24px;
 }
@@ -254,6 +255,12 @@ footer h2 {
 
 .website-link::before {
     content: "🌐";
+}
+
+/* Home Page */
+.hero img {
+    width: 100%;
+    height: auto;
 }
 
 /* DARK MODE */
