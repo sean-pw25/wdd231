@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.card {
+    width: 400px;
+    margin: .5rem auto;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 24px;
+    background-color: #f5e461;
+}
+
+h1,
+footer {
+    padding: 1rem;
+    background-color: #1f2d81;
+    color: #fff
+}
+
+figcaption {
+    text-transform: capitalize;
+}
+
+p {
+    padding: 1rem;
+    font-size: 1.4rem;
+}
