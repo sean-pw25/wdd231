@@ -44,6 +44,7 @@
     <!-- scripts -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/display.js" defer></script>
+    <script src="scripts/home.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 
@@ -64,11 +65,56 @@
             width="44" alt="Toggle Dark Mode">
     </header>
     <main>
-        <picture class="hero">
-            <source media="(min-width: 1024px)" srcset="images/hero.jpg">
-            <source media="(min-width: 500px)" srcset="images/hero-medium.jpg">
-            <img srcset="images/hero-small.jpg" alt="Upward shot of downtown buildings">
-        </picture>
+        <div class="opener">
+            <picture class="hero">
+                <source media="(min-width: 1024px)" srcset="images/hero.jpg">
+                <source media="(min-width: 500px)" srcset="images/hero-medium.jpg">
+                <img srcset="images/hero-small.jpg" alt="Upward shot of downtown buildings">
+            </picture>
+            <div class="cta">
+                <h1>Become a Member Today.</h1>
+                <a href="#" id="cta" class="join-btn">Join Us</a>
+            </div>
+        </div>
+        <section class="news">
+            <article class="events">
+                <ul>
+                    <h2>Upcoming Events</h2>
+                    <li>
+                        <h3 class="event-title"><b>Annual Local Business Expo</b></h3>
+                        <p><b>Date:</b> October 12, 2026 | 9:00 AM - 3:00 PM</p>
+                        <p><b>Location:</b> City Convention Center</p>
+                    </li>
+                    <li>
+                        <h3 class="event-title"><b>Monthly Networking Event</b></h3>
+                        <p><b>Date:</b> October 22, 2026 | 5:30 PM - 7:30 PM</p>
+                        <p><b>Location:</b> River View Bistro</p>
+                    </li>
+                    <li>
+                        <h3 class="event-title"><b>Monthly Networking Event</b></h3>
+                        <p><b>Date:</b> November 18, 2026 | 7:30 AM - 9:00 AM</p>
+                        <p><b>Location:</b> Grand Oak Hotel Ballroom</p>
+                    </li>
+                </ul>
+            </article>
+            <article class="weather">
+                <div class="current">
+                    <h2>Weather in Noblesville</h2>
+                    <p id="temp"></p>
+                    <p id="weather-desc"></p>
+                </div>
+                <img id="weather-icon" class="weather-icon">
+                <div id="forecast-cont" class="forecast">
+                </div>
+            </article>
+        </section>
+        <section class="spotlight">
+            <div class="spotlight-header">
+                <h2>Still deciding?</h2>
+                <p>Just ask a few of our Silver and Gold Star members</p>
+            </div>
+            <div id="spotlight-members" class="spotlight-members"></div>
+        </section>
     </main>
     <footer>
         <div class="contact-info">

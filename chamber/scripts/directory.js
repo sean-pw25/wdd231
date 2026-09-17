@@ -37,7 +37,7 @@ function displayMembers(data) {
         let image = document.createElement('img');
         let phone = document.createElement('p');
         let email = document.createElement('p');
-        let website = document.createElement('a')
+        let website = document.createElement('a');
         let sectionBody = document.createElement('div');
         let infoContainer = document.createElement('div');
 

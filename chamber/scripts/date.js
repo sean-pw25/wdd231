@@ -1,7 +1,7 @@
 const copyrightInfo = document.querySelector('#copyright');
 const lastModified = document.querySelector('#last-modified');
-const today = new Date();
+const now = new Date();
 
 
-copyrightInfo.innerHTML = today.getFullYear();
+copyrightInfo.innerHTML = now.getFullYear();
 lastModified.innerHTML = document.lastModified;
