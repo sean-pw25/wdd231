@@ -309,22 +309,14 @@ footer h2 {
 }
 
 .events {
-    padding: 0 0 0 0;
     font-family: var(--main-font);
-}
-
-.events h2 {
-    padding: .2rem;
-    margin: -10px 0 .7rem 5px;
-}
-
-.events {
     background-color: var(--primary-color);
     border-block: 10px solid var(--secondary-color);
 }
 
 .events h2 {
     padding: 1rem 0 0 1rem;
+    margin: -10px 0 .7rem 5px;
 }
 
 .events ul {
@@ -366,7 +358,7 @@ footer h2 {
     padding: 1rem;
     justify-content: space-around;
     background-image: linear-gradient(#00000031, #0000004d);
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid var(--text-color);
 }
 
 .current {
@@ -424,8 +416,10 @@ footer h2 {
 
 .spotlight p.membership {
     font-size: 1.2rem;
-    padding: .2rem;
-    margin-top: -5px;
+    color: #fff;
+    padding: .3rem;
+    background-image: linear-gradient(#4d4d4d, #3c3c3c);
+    border-radius: 12px;
 }
 
 .silver::after {
@@ -468,7 +462,10 @@ footer h2 {
 .dark .events ul,
 .dark .events h3,
 .dark .events li:nth-child(even),
-.dark .weather,
+.dark p.membership,
+.dark .weather .current h2,
+.dark .weather .current p,
+.dark .weather .current,
 
 /* directory page */
 .dark .list section div.body,
@@ -479,6 +476,7 @@ footer h2 {
     background-color: #2b2b2b;
     border-color: #2b2b2b;
     color: #fff;
+    background-image: none;
 }
 
 /* Lighter Contrast */
@@ -495,9 +493,7 @@ footer h2 {
 .dark .events li:nth-child(odd),
 .dark .events li:nth-child(even) h3,
 .dark .events li:nth-child(odd) p,
-.dark .weather .current,
-.dark .weather .current h2,
-.dark .weather .current p,
+.dark div.forecast div,
 
 
 /* directory page */
@@ -505,10 +501,17 @@ footer h2 {
 .dark section div.info-container,
 .dark section div.info-container p,
 .dark section div.info-container a {
+    background-image: none;
     background-color: #3c3c3c;
     color: #fff;
 }
 
-.dark .dark-theme-button {
+.dark .weather {
+    background-image: none;
+    background-color: #3c3c3c;
+    border-color: #2b2b2b;
+}
+
+.dark .dark .dark-theme-button {
     background-color: #d3d3d3
 }
