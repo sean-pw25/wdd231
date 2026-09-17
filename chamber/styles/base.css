@@ -318,10 +318,17 @@ footer h2 {
     margin: -10px 0 .7rem 5px;
 }
 
-.events ul {
+.events {
     background-color: var(--primary-color);
     border-block: 10px solid var(--secondary-color);
-    padding: 1rem 0 0 0;
+}
+
+.events h2 {
+    padding: 1rem 0 0 1rem;
+}
+
+.events ul {
+    padding-left: .5rem;
 }
 
 .events li {
@@ -443,7 +450,7 @@ footer h2 {
     text-align: left;
     font-size: 1rem;
     border-radius: 12px;
-    padding: .5rem;
+    padding: 1rem;
 }
 
 /* DARK MODE */
