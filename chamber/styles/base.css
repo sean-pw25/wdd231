@@ -396,9 +396,6 @@ footer h2 {
     font-size: 1.4rem;
     overflow: hidden;
     max-height: 7.75rem;
-}
-
-.forecast div {
     background-color: var(--primary-color);
     border-radius: 12px;
 }
