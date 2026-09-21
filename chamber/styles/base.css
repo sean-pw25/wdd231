@@ -24,9 +24,24 @@ header {
     background-color: var(--primary-color);
     align-items: end;
     display: grid;
-    grid-template-columns: 44px auto 88px;
+    grid-template-columns: auto 1fr auto auto;
+    width: 100%;
     border-bottom: 1px solid #000;
     overflow: hidden;
+}
+
+@media (max-width: 375px) {
+
+    header,
+    footer div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer h2 {
+        text-align: center;
+    }
 }
 
 .logo {
@@ -114,7 +129,7 @@ div.business-display-buttons {
 .display-button {
     font-family: var(--main-font);
     font-size: 1rem;
-    padding: .6rem 3rem;
+    padding: .6rem 2.5rem;
     margin: 0 2rem;
     cursor: pointer;
     background-color: var(--primary-color);
@@ -131,13 +146,15 @@ div.business-display-buttons {
 footer {
     font-family: var(--main-font);
     display: grid;
+    grid-template-columns: 1fr;
     align-items: end;
     background-color: var(--primary-color);
-    padding: 1rem;
+    padding: .5rem;
 }
 
 footer div {
-    padding: .5rem;
+    padding: 1rem;
+    max-width: 100%;
 }
 
 footer p {
@@ -166,7 +183,7 @@ footer h2 {
 .grid,
 .spotlight-members {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     align-items: center;
     grid-gap: 1rem;
 }
@@ -355,7 +372,7 @@ footer h2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     font-family: var(--main-font);
-    padding: 1rem;
+    padding: .5rem;
     justify-content: space-around;
     background-image: linear-gradient(#00000031, #0000004d);
     border-bottom: 5px solid var(--text-color);
@@ -379,14 +396,13 @@ footer h2 {
     grid-column: 1/3;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     text-align: center;
     margin-top: .5rem;
 }
 
 .forecast div {
     font-size: 1.4rem;
-    overflow: hidden;
     max-height: 7.75rem;
     background-color: var(--primary-color);
     border-radius: 12px;
