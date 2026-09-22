@@ -1,0 +1,12 @@
+The key HTML form concepts include:
+
+HTML forms are used to collect user input and submit it to a server for processing.
+There are over 30 form elements related to form input, layout, and behavior including text fields, labels, radio buttons, checkboxes, dropdowns, and buttons.
+Form data can be sent using different methods (GET or POST) depending on the requirements.
+Form elements can be grouped using the <fieldset> and <legend> elements.
+Form validation can be done using HTML attributes (e.g., required, pattern) or JavaScript.
+
+The key concepts are:
+
+JavaScript can be used to manipulate form data and handle form submissions dynamically.
+URLSearchParams is a built-in JavaScript object that provides utility methods for working with query string parameters.
