@@ -67,4 +67,9 @@
     .email-list {
         display: block;
     }
+
+    /* Join Page */
+    .join-cont {
+        grid-template-columns: auto auto;
+    }
 }

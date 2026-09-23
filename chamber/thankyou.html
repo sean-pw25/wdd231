@@ -6,25 +6,25 @@
     <!-- browser -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory | Noblesville Chamber of Commerce</title>
+    <title>Join | Noblesville Chamber of Commerce</title>
     <meta name="description"
-        content="Welcome to the directory page for the Noblesville Chamber of Commerce. Here you can view a list of our members and find their contact information.">
+        content="Welcome to the Noblesville Chamber of Commerce. Discover what we can do for your business if you become a member today!">
     <meta name="author" content="Sean Wood">
 
     <!-- open graph metadata -->
-    <meta property="og:title" content="Directory | Noblesville Chamber of Commerce">
+    <meta property="og:title" content="Join | Noblesville Chamber of Commerce">
     <meta property="og:description"
-        content="Welcome to the directory page for the Noblesville Chamber of Commerce. Here you can view a list of our members and find their contact information.">
+        content="Welcome to the Noblesville Chamber of Commerce. Discover what we can do for your business if you become a member today!">
     <meta property="og:url" content="https://sean-pw25.github.io/wdd231/chamber/directory.html">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://sean-pw25.github.io/wdd231/chamber/images/social-media-share.png">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Directory | Noblesville Chamber of Commerce">
+    <meta property="og:site_name" content="Join | Noblesville Chamber of Commerce">
 
     <!-- twitter (x) metadata -->
-    <meta property="twitter:title" content="Directory | Noblesville Chamber of Commerce">
+    <meta property="twitter:title" content="Join |Noblesville Chamber of Commerce">
     <meta property="twitter:description"
-        content="Welcome to the directory page for the Noblesville Chamber of Commerce. Here you can view a list of our members and find their contact information.">
+        content="Welcome to the Noblesville Chamber of Commerce. Discover what we can do for your business if you become a member today!">
     <meta property="twitter:url" content="https://sean-pw25.github.io/wdd231/chamber/directory.html">
     <meta property="twitter:card" content="summary-large-image">
 
@@ -43,9 +43,10 @@
 
     <!-- scripts -->
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
     <script src="scripts/display.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
     <script src="scripts/date.js" defer></script>
+
 </head>
 
 <body>
@@ -55,8 +56,8 @@
         <nav id="nav-bar" class="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
@@ -65,13 +66,11 @@
             width="44" alt="Toggle Dark Mode">
     </header>
     <main>
-        <h1>Directory</h1>
-        <div class="business-display-buttons">
-            <button id="grid" class="display-button" aria-label="View in Grid Mode">Grid</button>
-            <button id="list" class="display-button" aria-label="View in List Mode">List</button>
-        </div>
-        <div class="member-display grid" id="business-card-container">
-        </div>
+        <h1 class="thankyou">Thank You</h1>
+        <p class="thankyou">You successfully filled out the form to become a member of the Noblesville Chamber of
+            Commerce.</p>
+        <p class="thankyou-subtext">We will contact you within 5-7 business days for payment and finalization.</p>
+        <div id="results" class="form-info"></div>
     </main>
     <footer>
         <div class="contact-info">

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- metadata -->
+    <!-- browser -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Noblesville Chamber of Commerce</title>
+    <meta name="description"
+        content="Welcome to the Noblesville Chamber of Commerce. Discover what we can do for your business if you become a member today!">
+    <meta name="author" content="Sean Wood">
+
+    <!-- open graph metadata -->
+    <meta property="og:title" content="Join | Noblesville Chamber of Commerce">
+    <meta property="og:description"
+        content="Welcome to the Noblesville Chamber of Commerce. Discover what we can do for your business if you become a member today!">
+    <meta property="og:url" content="https://sean-pw25.github.io/wdd231/chamber/directory.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://sean-pw25.github.io/wdd231/chamber/images/social-media-share.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Join | Noblesville Chamber of Commerce">
+
+    <!-- twitter (x) metadata -->
+    <meta property="twitter:title" content="Join |Noblesville Chamber of Commerce">
+    <meta property="twitter:description"
+        content="Welcome to the Noblesville Chamber of Commerce. Discover what we can do for your business if you become a member today!">
+    <meta property="twitter:url" content="https://sean-pw25.github.io/wdd231/chamber/directory.html">
+    <meta property="twitter:card" content="summary-large-image">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/display.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="#"><img class="logo" src="images/logo.svg" alt="Building Logo" height="44" width="44"></a>
+        <p>Noblesville Chamber of Commerce</p>
+        <nav id="nav-bar" class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="ham-btn" class="hamburger" aria-label="Hamburger Menu"></button>
+        <img id="dark-mode-toggle" class="dark-theme-button" src="images/dark-mode.svg" loading="lazy" height="44"
+            width="44" alt="Toggle Dark Mode">
+    </header>
+    <main>
+        <h1>Join</h1>
+        <div class="join-cont">
+            <section class="join-form">
+                <form method="GET" action="thankyou.html">
+                    <h2>Membership Application Form</h2>
+                    <!-- First Name -->
+                    <label><input type="text" name="fname" title="Please Enter Your First Name" placeholder="John"
+                            autocomplete="on" required><span class="required">First Name</span></label>
+
+                    <!-- Last Name -->
+                    <label><input type="text" name="lname" title="Please Enter Your Last Name" placeholder="Smith"
+                            autocomplete="on" required><span class="required">Last Name</span></label>
+
+                    <!-- Applicant Organizational Title (only alpha characters, hyphens, and spaces) -->
+                    <label><input type="text" name="organization-title"
+                            title="Must be at least 7 characters long and can only include letters, spaces and hyphens"
+                            autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}"
+                            placeholder="Financial Executive Secretary"><span>Applicant Organizational Title</span>
+                    </label>
+
+                    <!-- Email -->
+                    <label><input type="email" name="email" title="Please Enter Your Email Address" autocomplete="email"
+                            placeholder="name@example.com" required><span class="required">Email</span></label>
+
+                    <!-- Phone -->
+                    <label><input type="tel" name="phone" title="Please Enter Your Phone Number"
+                            placeholder="(555) 555-5555" autocomplete="tel" required><span
+                            class="required">Phone</span></label>
+
+                    <!-- Organization Title -->
+                    <label><input type="text" name="organization" title="Name of Organization" autocomplete="on"
+                            placeholder="Smith Family Bar and Grill" required><span class="required">Name of
+                            Organization</span></label>
+
+                    <!-- Membership Selection -->
+                    <div class="membership-select">
+                        <h3 class="required">Please select a membership option</h3>
+                        <label><span>NP
+                                Membership</span><input type="radio" name="membership-level" value="np"
+                                required></label>
+                        <label><span>Bronze
+                                Membership</span><input type="radio" name="membership-level" value="bronze"
+                                required></label>
+                        <label><span>Silver
+                                Membership</span><input type="radio" name="membership-level" value="silver"
+                                required></label>
+                        <label><span>Gold
+                                Membership</span><input type="radio" name="membership-level" value="gold"
+                                required></label>
+                    </div>
+
+                    <!-- Description -->
+                    <label><textarea rows="3" name="description"
+                            title="Description of Organization"></textarea><span>Organization
+                            Description</span></label>
+
+                    <label>
+                        <!-- Timestamp (hidden) -->
+                        <input type="hidden" name="timestamp" id="timeStamp">
+
+                        <!-- Submit Button -->
+                        <input type="submit" value="Join">
+                    </label>
+                </form>
+            </section>
+            <section class="membership-section">
+                <h2>Membership Levels</h2>
+                <div class="membership-card-container" id="membershipList"></div>
+            </section>
+        </div>
+
+        <!-- Info Modal -->
+        <dialog id="infoModal" class="modal"></dialog>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <h2>Noblseville Chamber of Commerce</h2>
+            <p>1 North 8th Street, <br>Noblesville, IN 46060</p>
+            <p>info@noblesvillecc.org</p>
+            <p>(317) 555-1234</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/social/facebook.svg" alt="FaceBook"
+                    width="64" height="64"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="images/social/youtube.svg" alt="YouTube"
+                    width="64" height="64"></a>
+            <a href="https://www.linkedin.com/in/seanwood-sd/" target="_blank"><img src="images/social/linkedin.svg"
+                    alt="LinkedIn" width="64" height="64"></a>
+        </div>
+        <div class="site-info">
+            <p>WDD231 Class Project</p>
+            <p>Sean Wood</p>
+            <p>&COPY; <span id="copyright"></span> Noblesville Chamber of Commerce</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

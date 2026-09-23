@@ -460,6 +460,215 @@ footer h2 {
     padding: 1rem;
 }
 
+/* JOIN PAGE */
+.join-cont {
+    font-family: var(--main-font);
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.join-cont h2 {
+    padding: 1rem;
+}
+
+/* Form */
+.join-cont form {
+    padding: 1rem;
+    background-color: var(--background-color);
+}
+
+.join-cont form>label {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: .4rem;
+    padding: .5rem;
+    font-size: 1.1rem;
+}
+
+.join-cont input {
+    padding: .5rem;
+}
+
+.join-cont textarea {
+    height: 100px;
+    resize: none;
+}
+
+.join-cont form h3 {
+    padding: .5rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+}
+
+.join-cont .required::after {
+    content: '*';
+    font-family: arial;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.membership-select {
+    padding: 1rem 0;
+    margin: 0 .5rem;
+    font-size: 1.2rem;
+}
+
+.membership-select label {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: .5rem;
+    border-bottom: 1px solid black;
+    margin: 0 .5rem;
+}
+
+.membership-select input[type=radio] {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: auto 4rem 0
+}
+
+.join-cont input[type=submit] {
+    padding: 1rem 4rem;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+.join-cont input[type=submit]:hover {
+    cursor: pointer;
+}
+
+/* Membership Cards */
+
+.membership-section h2 {
+    padding: 2rem 4rem;
+}
+
+.membership-card-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.membership-card-container article {
+    padding: 3rem 0;
+    margin: 1rem 4rem;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    animation: fadeIn 2s ease forwards;
+}
+
+.membership-card-container button {
+    padding: .2rem .8rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.membership-card-container button:hover {
+    cursor: pointer;
+}
+
+.nonprofit-membership {
+    background-color: var(--primary-color);
+}
+
+.bronze-membership {
+    background-image: linear-gradient(#dba10d, #85671a);
+}
+
+.silver-membership {
+    background-image: linear-gradient(#c6c6c6, #6a6a6a);
+}
+
+.gold-membership {
+    background-image: linear-gradient(#f9e683, #ffd607);
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(50px);
+        opacity: 70%;
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+/* MODAL */
+.modal {
+    margin: auto;
+    font-family: var(--main-font);
+    max-width: 80%;
+}
+
+.modal h2 {
+    padding: 1rem;
+}
+
+.modal li {
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+.modal p {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+
+.modal button {
+    border: none;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+}
+
+.modal button:hover {
+    cursor: pointer;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 40%);
+}
+
+/* Thank You Page */
+.thankyou {
+    text-align: center;
+}
+
+p.thankyou {
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+}
+
+p.thankyou-subtext {
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+
+.form-info {
+    background-color: var(--background-color);
+    padding: 1rem;
+    font-family: var(--main-font);
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.form-info>* {
+    padding: .5rem;
+}
+
 /* DARK MODE */
 
 /* Dark contrast */
@@ -487,7 +696,10 @@ footer h2 {
 .dark .list section div.body,
 .dark .list section div.info-container a,
 .dark .list section div.info-container p,
-.dark div.info-container {
+.dark div.info-container,
+
+/* join page */
+.dark form {
 
     background-color: #2b2b2b;
     border-color: #2b2b2b;
@@ -516,7 +728,11 @@ footer h2 {
 .dark section div.body,
 .dark section div.info-container,
 .dark section div.info-container p,
-.dark section div.info-container a {
+.dark section div.info-container a,
+
+/* join page */
+.dark form div,
+.dark .modal {
     background-image: none;
     background-color: #3c3c3c;
     color: #fff;
@@ -530,4 +746,12 @@ footer h2 {
 
 .dark .dark .dark-theme-button {
     background-color: #d3d3d3
+}
+
+.dark .membership-card-container {
+    color: black;
+}
+
+.dark .modal {
+    border: none;
 }
