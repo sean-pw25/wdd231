@@ -661,8 +661,7 @@ p.thankyou-subtext {
     max-width: 700px;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: auto;
 }
 
 .form-info>* {

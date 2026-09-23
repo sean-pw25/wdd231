@@ -72,4 +72,8 @@
     .join-cont {
         grid-template-columns: auto auto;
     }
+
+    .form-info {
+        grid-template-columns: 1fr 1fr;
+    }
 }
