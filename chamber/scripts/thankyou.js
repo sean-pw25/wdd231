@@ -10,7 +10,7 @@ const results = document.querySelector('#results').innerHTML = `
             <p><strong>Business Name:</strong> </p>
             <span>${userInfo.get('organization')}</span>
             <p><strong>Membership Level:</strong> </p>
-            <span>${userInfo.get('membership-level')}</span>
+            <span>${userInfo.get('membership-level').toUpperCase()}</span>
             <p><strong>Time of Form Submission:</strong> </p>
             <span>${userInfo.get('timestamp')}</span>
 `
