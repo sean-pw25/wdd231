@@ -17,6 +17,7 @@
 body {
     max-width: 1200px;
     margin: 0 auto;
+    font-family: var(--main-font);
 }
 
 /* HEADER */
@@ -44,12 +45,13 @@ header {
     }
 }
 
-.logo {
+.logo,
+.weather-icon {
     margin: 1rem;
 }
 
 header p {
-    font-family: var(--main-font);
+
     margin: 1rem 1rem 1.1rem 2rem;
     font-size: 1.4rem;
 }
@@ -64,7 +66,7 @@ header p {
 
 .nav ul {
     list-style: none;
-    font-family: var(--main-font);
+
     padding: 0;
     margin-left: 1rem;
 }
@@ -115,7 +117,7 @@ header p {
 }
 
 main h1 {
-    font-family: var(--main-font);
+
     font-size: 2.2rem;
     padding: 0 1rem;
 }
@@ -127,7 +129,6 @@ div.business-display-buttons {
 }
 
 .display-button {
-    font-family: var(--main-font);
     font-size: 1rem;
     padding: .6rem 2.5rem;
     margin: 0 2rem;
@@ -144,7 +145,7 @@ div.business-display-buttons {
 
 /* FOOTER */
 footer {
-    font-family: var(--main-font);
+
     display: grid;
     grid-template-columns: 1fr;
     align-items: end;
@@ -176,7 +177,7 @@ footer h2 {
 
 /* Directory Page */
 .member-display {
-    font-family: var(--main-font);
+
     padding: 2rem 0;
 }
 
@@ -194,6 +195,8 @@ footer h2 {
     background-color: var(--primary-color);
     border: 8px solid var(--primary-color);
     border-radius: 12px;
+    min-height: 250px;
+    position: relative;
 }
 
 .grid section h2,
@@ -218,6 +221,8 @@ footer h2 {
     grid-gap: .2rem;
     background-color: var(--background-color);
     border-radius: 12px;
+    position: absolute;
+    bottom: 1%;
 }
 
 .grid section div.info-container,
@@ -255,10 +260,6 @@ footer h2 {
     grid-template-columns: 3fr 5fr;
 }
 
-.business-type {
-    display: none;
-}
-
 .list section div.info-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -288,10 +289,10 @@ footer h2 {
     position: relative;
 }
 
-.hero img {
+picture.hero img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    display: block;
 }
 
 .cta {
@@ -313,7 +314,7 @@ footer h2 {
     background-color: var(--secondary-color);
     border: 1px solid black;
     color: #fff;
-    font-family: var(--main-font);
+
     padding: .6rem 1.6rem;
     border-radius: 12px;
     transition: 0.2s ease-in-out;
@@ -327,7 +328,7 @@ footer h2 {
 }
 
 .events {
-    font-family: var(--main-font);
+
     background-color: var(--primary-color);
     border-block: 10px solid var(--secondary-color);
 }
@@ -372,7 +373,7 @@ footer h2 {
 .weather {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    font-family: var(--main-font);
+
     padding: .5rem;
     justify-content: space-around;
     background-image: linear-gradient(#00000031, #0000004d);
@@ -383,10 +384,6 @@ footer h2 {
     background-color: var(--primary-color);
     padding: 1rem;
     border-radius: 12px;
-}
-
-.weather-icon {
-    margin: 1rem;
 }
 
 .weather p {
@@ -415,7 +412,7 @@ footer h2 {
 
 .spotlight {
     background-color: var(--background-color);
-    font-family: var(--main-font);
+
 }
 
 .spotlight-header {
@@ -463,7 +460,7 @@ footer h2 {
 
 /* JOIN PAGE */
 .join-cont {
-    font-family: var(--main-font);
+
     display: grid;
     grid-template-columns: 100%;
 }
@@ -600,7 +597,7 @@ footer h2 {
 /* MODAL */
 .modal {
     margin: auto;
-    font-family: var(--main-font);
+
     max-width: 80%;
 }
 
@@ -643,13 +640,13 @@ footer h2 {
 }
 
 p.thankyou {
-    font-family: var(--main-font);
+
     font-size: 1.5rem;
 }
 
 p.thankyou-subtext {
     text-align: center;
-    font-family: var(--main-font);
+
     font-size: 1.2rem;
     padding: .5rem;
 }
@@ -657,7 +654,7 @@ p.thankyou-subtext {
 .form-info {
     background-color: var(--background-color);
     padding: 1rem;
-    font-family: var(--main-font);
+
     font-size: 1.25rem;
     max-width: 700px;
     margin: auto;
