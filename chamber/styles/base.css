@@ -751,10 +751,13 @@ p.thankyou-subtext {
 .dark .list section div.info-container p,
 .dark div.info-container,
 
+/* Discover Page */
+.dark .places-grid div,
+.dark .places-grid button:hover,
+
 /* join page */
 .dark form,
 .dark .form-info {
-
     background-color: #2b2b2b;
     border-color: #2b2b2b;
     color: #fff;
@@ -783,6 +786,9 @@ p.thankyou-subtext {
 .dark section div.info-container,
 .dark section div.info-container p,
 .dark section div.info-container a,
+
+/* Discover Page */
+.dark .places-grid button,
 
 /* join page */
 .dark form div,
