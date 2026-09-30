@@ -42,7 +42,7 @@ function displayVisitMessage() {
     const currentVisit = Date.now();
     const daysSinceLastVisit = Math.floor((currentVisit - lastVisit) / 86400000);
 
-    if (lastVisit === null) {
+    if (lastVisit === 0) {
         visitMessage.textContent = 'Welcome! Let us know if you have any questions.';
     } else {
         switch (true) {
