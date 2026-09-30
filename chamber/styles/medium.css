@@ -1,0 +1,16 @@
+@media only screen and (min-width: 38rem) {
+
+    .places-grid div {
+        width: auto;
+        max-width: 900px;
+        grid-template-areas:
+            "img name"
+            "img description"
+            "img location"
+            "img button";
+    }
+
+    .places-grid img:hover {
+        box-shadow: 0 0 50px #333;
+    }
+}

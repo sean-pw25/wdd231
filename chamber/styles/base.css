@@ -314,7 +314,6 @@ img.hero {
     background-color: var(--secondary-color);
     border: 1px solid black;
     color: #fff;
-
     padding: .6rem 1.6rem;
     border-radius: 12px;
     transition: 0.2s ease-in-out;
@@ -664,6 +663,63 @@ p.thankyou-subtext {
 
 .form-info>* {
     padding: .5rem;
+}
+
+/* Discover Page */
+.places-grid {
+    display: grid;
+}
+
+.places-grid div {
+    background-color: var(--background-color);
+    overflow: hidden;
+    margin: .5rem auto;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 12px;
+    display: grid;
+    grid-template-areas:
+        "name"
+        "img"
+        "description"
+        "location"
+        "button";
+}
+
+.places-grid div h2 {
+    grid-area: name;
+    padding: .5rem;
+}
+
+.places-grid div figure {
+    grid-area: img;
+    width: 300px;
+}
+
+.places-grid div p {
+    margin: .5rem 0;
+    padding: .5rem;
+    grid-area: description;
+}
+
+.places-grid div address {
+    margin-bottom: 1rem;
+    padding: .5rem;
+    grid-area: location;
+}
+
+.places-grid div button {
+    grid-area: button;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: .2rem 1rem;
+    margin: .5rem auto;
+}
+
+.places-grid div button:hover {
+    cursor: pointer;
+    background-color: #c1c1c1;
 }
 
 /* DARK MODE */
