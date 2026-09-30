@@ -1,6 +1,7 @@
 import { places } from '../data/data.mjs';
 
 const placesDisplay = document.querySelector('#placesDisplay');
+let visitMessage = document.querySelector('#visitMessage')
 
 function displayCards(list) {
     list.forEach((item) => {
@@ -42,17 +43,17 @@ function displayVisitMessage() {
     const daysSinceLastVisit = Math.floor((currentVisit - lastVisit) / 86400000);
 
     if (lastVisit === null) {
-        console.log('Welcome! Let us know if you have any questions.');
+        visitMessage.textContent = 'Welcome! Let us know if you have any questions.';
     } else {
         switch (true) {
             case daysSinceLastVisit < 1:
-                console.log('Back so soon! Awesome!');
+                visitMessage.textContent = 'Back so soon! Awesome!';
                 break;
             case daysSinceLastVisit >= 1 && daysSinceLastVisit < 2:
-                console.log('You last visited 1 day ago.');
+                visitMessage.textContent = 'You last visited 1 day ago.';
                 break;
             case daysSinceLastVisit >= 2:
-                console.log(`You last visited ${daysSinceLastVisit} days ago.`)
+                visitMessage.textContent = `You last visited ${daysSinceLastVisit} days ago.`;
         }
     }
     localStorage.setItem('lastVisit', currentVisit);
