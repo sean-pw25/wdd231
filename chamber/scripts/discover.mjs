@@ -12,6 +12,7 @@ function displayCards(list) {
         const img = document.createElement('img');
         img.src = `images/discover/${item.image}`
         img.alt = item.name;
+        img.loading = 'lazy';
         figure.appendChild(img);
         card.appendChild(figure);
 
