@@ -24,69 +24,102 @@ html {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 /* HEADER */
 header {
+    padding: .1rem;
     background-color: var(--secondary);
     color: var(--background);
     display: grid;
-    margin: .1rem;
     align-items: center;
-    grid-template-columns: 48px auto 48px;
+    grid-template-columns: auto 64px;
     grid-template-areas:
-        "header-logo site-name hamburger-button"
-        "navigation navigation navigation";
+        "header-logo hamburger-button"
+        "navigation navigation";
 }
 
 .header-logo {
     grid-area: header-logo;
 }
 
-.site-name {
-    font-weight: 400;
-    grid-area: site-name;
-    text-align: left;
-    padding-left: .5rem;
-}
-
 .hamburger-button {
     grid-area: hamburger-button;
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
     background-color: transparent;
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    row-gap: 9px;
     border: none;
-    padding: .7rem;
+    padding: 16px;
 }
 
+/* Menu icon transition from hamburger to 'X'*/
 .hamburger-button span {
     display: block;
     height: 3px;
     width: 100%;
     background-color: var(--background);
     border-radius: 2px;
+    transition: transform .3s ease, opacity .3s ease;
+}
+
+.hamburger-button.active span:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+}
+
+.hamburger-button.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-button.active span:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
 }
 
 .navigation {
     grid-area: navigation;
     display: none;
+    position: relative;
 }
 
 .navigation.show {
     display: block;
+    background-color: var(--background);
 }
 
 .navigation ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    padding: 0;
+    padding: 1rem 2.55rem;
+}
+
+.navigation a {
+    display: block;
+    padding: .7rem;
+    color: var(--font-color);
+}
+
+.navigation a.active {
+    text-decoration: underline 2px;
+    text-underline-offset: 3px;
 }
 
 .dark-mode-button {
     grid-area: dark-mode-button;
+    position: absolute;
+    top: 14px;
+    right: 2px;
+    height: 48px;
+    width: 48px;
+    background-color: transparent;
+    border: none;
+}
+
+.dark-mode-button:hover {
+    cursor: pointer;
 }
