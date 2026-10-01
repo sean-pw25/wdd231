@@ -1,0 +1,76 @@
+/* VARIABLES */
+:root {
+    --background: #ededed;
+    --primary: #ffffff;
+    --secondary: #565264;
+    --accent-red: #b4041e;
+    --complimentary-green: #668f76;
+
+    --font-color: #2b303c;
+    --main-font: "Plus Jakarta Sans", sans-serif;
+    --bold: 700;
+}
+
+/* NORMALIZATION */
+html {
+    scroll-behavior: smooth;
+    font-family: var(--main-font)
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    display: grid;
+    margin: .1rem;
+    align-items: center;
+    grid-template-columns: 48px auto 48px;
+    grid-template-areas:
+        "header-logo site-name hamburger-button"
+        "navigation navigation navigation";
+}
+
+.header-logo {
+    grid-area: header-logo;
+}
+
+.site-name {
+    grid-area: site-name;
+    text-align: left;
+    padding-left: .5rem;
+}
+
+.hamburger-button {
+    grid-area: hamburger-button;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border: none;
+}
+
+.navigation {
+    grid-area: navigation;
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.dark-mode-button {
+    grid-area: dark-mode-button;
+}
