@@ -28,6 +28,8 @@ a {
 
 /* HEADER */
 header {
+    background-color: var(--secondary);
+    color: var(--background);
     display: grid;
     margin: .1rem;
     align-items: center;
@@ -42,6 +44,7 @@ header {
 }
 
 .site-name {
+    font-weight: 400;
     grid-area: site-name;
     text-align: left;
     padding-left: .5rem;
@@ -52,7 +55,20 @@ header {
     width: 48px;
     height: 48px;
     background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: none;
+    padding: .7rem;
+}
+
+.hamburger-button span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--background);
+    border-radius: 2px;
 }
 
 .navigation {
