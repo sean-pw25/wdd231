@@ -1,1 +1,45 @@
-@media only screen and (min-width: 64rem) {}
+@media only screen and (min-width: 64rem) {
+
+    header {
+        padding: 0;
+    }
+
+    .header-logo {
+        margin-left: 1rem;
+    }
+
+    .hamburger-button {
+        display: none;
+    }
+
+    .navigation {
+        position: static;
+        transform: translateY(0px);
+        grid-row: auto;
+        grid-column: auto;
+        z-index: 10;
+    }
+
+    .navigation ul {
+        display: grid;
+        width: 50%;
+        margin-left: 45%;
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .navigation li {
+        text-align: center;
+    }
+
+    .navigation a {
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+
+    .dark-mode-button {
+        height: 64px;
+        width: 64px;
+        justify-content: center;
+        align-items: center;
+    }
+}
