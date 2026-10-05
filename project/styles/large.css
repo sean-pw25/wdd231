@@ -50,10 +50,74 @@
 
     /* FOOTER */
 
+    footer {
+        display: flex;
+    }
+
+    .site-links {
+        display: block
+    }
+
+    .site-links ul {
+        list-style-type: none;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .site-links a {
+        width: 10rem;
+        padding: 1rem 0;
+        display: block;
+    }
+
     .scroll-button {
         display: none;
     }
 
+    .social {
+        grid-column: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: none;
+    }
+
+    .social ul {
+        padding: .5rem;
+    }
+
+    .social img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .page-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: baseline;
+        margin: 0 2rem;
+        padding-bottom: 1rem;
+    }
+
+    footer .left {
+        text-align: left;
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    footer .right {
+        grid-column: 3/4;
+        grid-row: 1;
+        text-align: right;
+    }
+
+    /* HOME PAGE */
     .hero {
         width: 100%;
         height: auto;

@@ -16,7 +16,7 @@ const root = document.documentElement;
 const headerLogo = document.getElementById('headerLogo');
 const darkModeIcon = document.getElementById('darkModeIcon');
 
-document.getElementById('copyright').innerHTML = `&copy; ${dateTime.getFullYear()} Sean Wood`;
+document.getElementById('copyright').innerHTML = `&copy; ${dateTime.getFullYear()} RedEmber Web Design`;
 
 function loadStyle() {
     if (localStorage.getItem('darkMode') === 'on') {

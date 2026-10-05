@@ -3,7 +3,7 @@
     --primary: #f4f4f4;
     --primary-hover: #d5d3d3;
     --secondary: #404040;
-    --accent-red: #bc2824;
+    --accent-red: #FF5C5C;
     --accent-yellow: #f8be2e;
 
     --main-font: "Plus Jakarta Sans", sans-serif;
@@ -139,7 +139,9 @@ header {
     text-underline-offset: .2rem;
 }
 
-.navigation a.active {
+.navigation a.active,
+.site-links a:hover,
+.site-links a.active {
     text-decoration: underline;
     text-underline-offset: .2rem;
 }
@@ -168,6 +170,11 @@ footer {
     justify-content: center;
     text-align: center;
     font-size: 1.2rem;
+}
+
+.site-links {
+    display: none;
+    list-style-type: none;
 }
 
 footer>p {
@@ -213,9 +220,57 @@ footer>p {
     padding: 2rem 0;
 }
 
+.page-info>* {
+    padding: .5rem;
+}
+
 /* Home Page */
+
+.opener {
+    position: relative;
+}
 
 .hero img {
     width: 100%;
     height: auto;
+}
+
+.opener .cta {
+    position: absolute;
+    top: 26%;
+    background-color: var(--primary);
+    color: var(--secondary);
+    width: 100%;
+    padding: 2rem 4rem;
+    text-align: center;
+}
+
+.opener h1 {
+    margin: 0;
+    text-shadow: 0 0 20px gray;
+}
+
+.opener p {
+    padding: 1rem;
+    text-shadow: 0 0 10px gray;
+}
+
+.call-to-action {
+    display: block;
+    width: fit-content;
+    padding: .8rem 2rem;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: var(--accent-red);
+    border: 1px solid #cc0000;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color .2s ease, color .2s ease;
+    margin: auto;
+}
+
+.call-to-action:hover {
+    background-color: #cc0000;
+    color: #f4f4f4;
 }
