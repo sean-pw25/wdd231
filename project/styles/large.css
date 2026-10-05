@@ -1,11 +1,13 @@
 @media only screen and (min-width: 64rem) {
 
+    /* HEADER */
     header {
-        padding: 0;
+        padding: 0rem;
+        display: flex;
     }
 
     .header-logo {
-        margin-left: 1rem;
+        margin: 0 1rem;
     }
 
     .hamburger-button {
@@ -13,18 +15,20 @@
     }
 
     .navigation {
-        position: static;
-        transform: translateY(0px);
         grid-row: auto;
         grid-column: auto;
+        position: static;
+        transform: translateY(0px);
         z-index: 10;
+
+        transform: none;
+        visibility: visible;
     }
 
     .navigation ul {
-        display: grid;
-        width: 50%;
-        margin-left: 45%;
-        grid-template-columns: repeat(3, auto);
+        display: flex;
+        flex-direction: row;
+        margin: auto;
     }
 
     .navigation li {
@@ -33,7 +37,7 @@
 
     .navigation a {
         font-size: 1rem;
-        padding: 1.5rem;
+        padding: 2rem 4rem;
     }
 
     .dark-mode-button {
@@ -41,5 +45,17 @@
         width: 64px;
         justify-content: center;
         align-items: center;
+        margin: auto .8rem auto 0;
+    }
+
+    /* FOOTER */
+
+    .scroll-button {
+        display: none;
+    }
+
+    .hero {
+        width: 100%;
+        height: auto;
     }
 }
