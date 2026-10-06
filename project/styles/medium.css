@@ -1,1 +1,30 @@
-@media only screen and (min-width: 32rem) {}
+@media only screen and (min-width: 38rem) {
+
+    /* HOME PAGE */
+    .hero {
+        width: 100%;
+        height: auto;
+    }
+
+    .review-cont {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .review-page {
+        padding: 1rem;
+    }
+
+    .review-card {
+        min-height: 100%;
+    }
+
+    .review-body {
+        padding-bottom: 1rem;
+    }
+
+    .carousel-dots {
+        display: none;
+    }
+}
