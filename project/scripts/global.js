@@ -26,6 +26,7 @@ function loadStyle() {
         root.style.setProperty('--primary', '#2b2b2b');
         root.style.setProperty('--primary-hover', '#3c3c3c');
         root.style.setProperty('--secondary', '#f4f4f4');
+        root.style.setProperty('--card-background', '#3b3b3b');
     } else {
         headerLogo.src = 'images/logo/red-ember-horizontal.png';
         darkModeIcon.src = 'images/global/dark-theme.svg';
@@ -33,6 +34,7 @@ function loadStyle() {
         root.style.setProperty('--primary', '#f4f4f4');
         root.style.setProperty('--primary-hover', '#d5d3d3');
         root.style.setProperty('--secondary', '#404040');
+        root.style.setProperty('--card-background', '#e9e9e9');
     }
 };
 

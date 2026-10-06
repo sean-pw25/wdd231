@@ -129,4 +129,36 @@
         max-width: 1800px;
         margin: auto;
     }
+
+    .card {
+        transition: transform .4s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-.5rem);
+    }
+
+    .comparison h2 {
+        padding: .5rem 0 4rem 0;
+    }
+
+    .compare {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        max-width: 1000px;
+    }
+
+    .comparison h3 {
+        font-size: 1.4rem;
+    }
+
+    .comparison ul {
+        text-align: left;
+        padding: .5rem;
+    }
+
+    .comparison li {
+        padding: .4rem;
+    }
 }

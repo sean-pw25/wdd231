@@ -1,6 +1,7 @@
 /* VARIABLES */
 :root {
     --primary: #f4f4f4;
+    --card-background: #e9e9e9;
     --primary-hover: #d5d3d3;
     --secondary: #404040;
     --accent-red: #FF5C5C;
@@ -227,6 +228,15 @@ footer>p {
     padding: .5rem;
 }
 
+/* Other */
+.card {
+    background-color: var(--card-background);
+    border: 1px solid var(--secondary);
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+}
+
+
 /* Home Page */
 
 .opener {
@@ -302,10 +312,7 @@ footer>p {
 
 .review-card {
     padding: 1rem;
-    background-color: var(--primary);
     color: var(--secondary);
-    border: 1px solid var(--secondary);
-    border-radius: 24px;
     min-height: 100%;
 }
 
@@ -315,7 +322,7 @@ footer>p {
 
 .review-body {
     padding: .8rem .6rem 1rem .6rem;
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 .dark .stars {
@@ -357,6 +364,39 @@ footer>p {
     background-color: var(--accent-dark-red);
 }
 
+.comparison {
+    margin: 3rem 0;
+    padding: 3rem 0 2rem 0;
+    border-top: 1px solid var(--primary-hover);
+    border-bottom: 1px solid var(--primary-hover);
+    text-align: center;
+}
+
 .comparison h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+}
+
+.comparison article {
+    margin: auto;
+    padding: 2rem 1rem;
+    line-height: 1.5;
+}
+
+.comparison article span {
+    text-decoration: 3px underline var(--accent-dark-red);
+    text-underline-offset: 4px;
+}
+
+.comparison article p {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.compare {
+    display: none;
+}
+
+.kicker {
+    text-decoration: 2px underline var(--accent-yellow);
+    text-underline-offset: 4px;
 }
