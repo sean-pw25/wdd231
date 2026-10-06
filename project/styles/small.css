@@ -4,6 +4,7 @@
     --primary-hover: #d5d3d3;
     --secondary: #404040;
     --accent-red: #FF5C5C;
+    --accent-dark-red: #C50A07;
     --accent-yellow: #f8be2e;
 
     --main-font: "Plus Jakarta Sans", sans-serif;
@@ -273,4 +274,77 @@ footer>p {
 .call-to-action:hover {
     background-color: #cc0000;
     color: #f4f4f4;
+}
+
+.reviews {
+    position: relative;
+}
+
+.review-cont {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.review-cont::-webkit-scrollbar {
+    display: none;
+}
+
+.review-page {
+    min-width: 100vw;
+    padding: 2rem;
+    scroll-snap-align: start;
+}
+
+.scroll-marker {
+    width: 1em;
+    height: 1em;
+    background-color: var(--secondary);
+    border-radius: 24px;
+}
+
+.carousel-dots {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    gap: 0.5rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.carousel-dots span {
+    display: block;
+    height: 8px;
+    width: 8px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+}
+
+.carousel-dots span.active {
+    background-color: var(--accent-dark-red);
+}
+
+.review-card {
+    padding: 1rem;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    border-radius: 24px;
+}
+
+.review>* {
+    padding: .2rem;
+}
+
+.dark .stars {
+    color: var(--accent-yellow);
+    font-size: 1.5rem;
+}
+
+.stars {
+    color: #C50A07;
+    font-size: 1.5rem;
 }

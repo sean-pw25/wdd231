@@ -22,12 +22,14 @@ function loadStyle() {
     if (localStorage.getItem('darkMode') === 'on') {
         headerLogo.src = 'images/logo/red-ember-horizontal-dark-mode.png';
         darkModeIcon.src = 'images/global/dark-theme-dark-mode.svg';
+        root.classList.add('dark');
         root.style.setProperty('--primary', '#2b2b2b');
         root.style.setProperty('--primary-hover', '#3c3c3c');
         root.style.setProperty('--secondary', '#f4f4f4');
     } else {
         headerLogo.src = 'images/logo/red-ember-horizontal.png';
         darkModeIcon.src = 'images/global/dark-theme.svg';
+        root.classList.remove('dark');
         root.style.setProperty('--primary', '#f4f4f4');
         root.style.setProperty('--primary-hover', '#d5d3d3');
         root.style.setProperty('--secondary', '#404040');
