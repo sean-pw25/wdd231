@@ -296,7 +296,7 @@ footer>p {
 
 .review-page {
     min-width: 100%;
-    padding: 2rem 2.5rem;
+    padding: 2rem 1rem;
     scroll-snap-align: start;
 }
 
@@ -314,7 +314,7 @@ footer>p {
 }
 
 .review-body {
-    padding: .8rem .6rem 8rem .6rem;
+    padding: .8rem .6rem 1rem .6rem;
     line-height: 1.6;
 }
 
@@ -355,4 +355,8 @@ footer>p {
 
 .carousel-dots span.active {
     background-color: var(--accent-dark-red);
+}
+
+.comparison h2 {
+    font-size: 2.5rem;
 }
