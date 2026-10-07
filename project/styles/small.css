@@ -412,3 +412,10 @@ footer>p {
 .final-cta p {
     padding: 1rem 0 2rem 0;
 }
+
+/* SERVICES */
+
+main>h1 {
+    text-align: center;
+    font-size: 3rem;
+}

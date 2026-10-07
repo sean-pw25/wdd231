@@ -1,27 +1,7 @@
-const quote = document.getElementById('quote');
-const apiEndpoint = 'https://programming-quotesapi.vercel.app/api/random';
-const url = `https://corsproxy.io/?${encodeURIComponent(apiEndpoint)}`;
+const siteBuilds = document.getElementById('siteBuilds');
+const upgrades = document.getElementById('upgrades');
+const other = document.getElementById('other');
 
-
-// Fetch and display quote from Programming Quotes API
-async function displayQuote() {
-    try {
-
-        const response = await fetch(url, {
-            method: "GET",
-            headers: {
-                "Accept": "application/json"
-            }
-        });
-        if (!response.ok) {
-            throw new Error(`Http error. Status: ${response.status}`);
-        }
-        const data = await response.json();
-        quote.innerHTML = `<blockquote><p>${data.quote}</p></blockquote><p><cite>${data.author}</cite></p>`;
-    }
-    catch (error) {
-        console.error(`Fetch error: ${error.message}`);
-    }
+async function fetchData() {
+    url = 'https://sean-pw25.github.io/wdd231/project/data/services.json';
 }
-
-displayQuote();
