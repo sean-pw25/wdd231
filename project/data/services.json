@@ -4,7 +4,7 @@
             "name": "Single-Page Landing Page",
             "description": "A fully responsive, high-converting landing page optimized for all devices. Ideal for product launches, events, or local campaigns.",
             "price": "$299.00",
-            "img": "",
+            "img": "https://placehold.co/100x100",
             "highlight": false
         },
         {
@@ -18,7 +18,7 @@
             "name": "Growth Business Package (5 Pages)",
             "description": "A complete 5-page responsive website featuring basic SEO setup, lead capture forms, and social media integration.",
             "price": "$999.00",
-            "img": "",
+            "img": "https://placehold.co/100x100",
             "highlight": false
         }
     ],
@@ -27,49 +27,49 @@
             "name": "Additional Custom Page",
             "description": "Expand your site with an extra fully responsive, custom-designed page tailored to your content.",
             "price": "$125.00/page",
-            "img": "",
+            "img": "https://placehold.co/100x100",
             "highlight": false
         },
         {
             "name": "Website Redesign & Refresh",
             "description": "Modernize your existing website's look and layout while preserving your original content and structure.",
             "price": "$175.00/page",
-            "img": "",
+            "img": "https://placehold.co/100x100",
             "highlight": false
         },
         {
             "name": "CMS & Blog Integration",
             "description": "Integration of a user-friendly Content Management System (CMS) allowing you to easily publish blog posts and update site content without coding.",
             "price": "$199.00",
-            "img": "",
+            "img": "https://placehold.co/100x100",
             "highlight": false
         },
         {
             "name": "SEO & Performance Optimization",
             "description": "Boost site speed, optimize metadata for Google search rankings, and configure accessibility best practices.",
             "price": "$199.00",
-            "img": "",
+            "img": "https://placehold.co/100x100",
             "highlight": true
         },
         {
             "name": "Security & Backup Setup",
             "description": "Includes SSL configuration, anti-spam form protection, database backup setup, and basic security hardening.",
             "price": "$149.00",
-            "img": "",
+            "img": "https://placehold.co/100x100",
             "highlight": false
         },
         {
             "name": "Website Copywriting & Content Creation",
             "description": "Engaging, SEO-friendly body copy and calls-to-action written specifically for your target audience and brand voice.",
             "price": "$99.00/page",
-            "img": "",
+            "img": "https://placehold.co/100x100",
             "highlight": false
         },
         {
             "name": "Google Analytics & Event Tracking",
             "description": "Setup of custom conversion tracking and analytics reporting to monitor site visitors, contact form submissions, and sales leads.",
             "price": "$149.00",
-            "img": "",
+            "img": "https://placehold.co/100x100",
             "highlight": false
         }
     ],
@@ -78,35 +78,35 @@
             "name": "E-Commerce Web Shop",
             "description": "Complete online store setup including payment gateway integration (Stripe/PayPal), product catalog setup, and inventory management.",
             "price": "Contact for Quote",
-            "img": "",
+            "img": "https://placehold.co/100x100",
             "highlight": false
         },
         {
             "name": "Managed Hosting & Security",
             "description": "Reliable cloud hosting setup, SSL certificate renewal, domain management, and routine uptime monitoring.",
             "price": "$14.99/month",
-            "img": "",
+            "img": "https://placehold.co/100x100",
             "highlight": false
         },
         {
             "name": "Maintenance & Content Care Plan",
             "description": "Includes hosting plus monthly software updates, content edits, automated daily backups, and priority support.",
             "price": "$49.99/month",
-            "img": "",
+            "img": "https://placehold.co/100x100",
             "highlight": false
         },
         {
             "name": "Custom Full-Stack Application",
             "description": "Tailor-made web applications requiring custom databases, user authentication, third-party API integrations, or complex logic.",
             "price": "Contact for Quote",
-            "img": "",
+            "img": "https://placehold.co/100x100",
             "highlight": false
         },
         {
             "name": "Domain & Business Email Setup",
             "description": "Complete setup of your custom domain DNS, SSL security certificates, and professional business email addresses (e.g., info@yourcompany.com).",
             "price": "$75.00",
-            "img": "",
+            "img": "https://placehold.co/100x100",
             "highlight": false
         }
     ]
