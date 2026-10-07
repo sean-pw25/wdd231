@@ -400,3 +400,16 @@ footer>p {
     text-decoration: 2px underline var(--accent-yellow);
     text-underline-offset: 4px;
 }
+
+.final-cta {
+    padding: 2rem 2rem 4rem 2rem;
+    text-align: center;
+}
+
+.final-cta h2 {
+    font-size: 1.6rem;
+}
+
+.final-cta p {
+    padding: 1rem 0 2rem 0;
+}
