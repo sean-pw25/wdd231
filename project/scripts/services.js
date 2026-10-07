@@ -27,8 +27,15 @@ function displayServices(array, element) {
         card.classList.add('card');
         const name = document.createElement('h3');
         name.textContent = service.name;
+        const img = document.createElement('img');
+        img.setAttribute('src', `${service.img}`);
+        img.setAttribute('loading', 'lazy');
+        img.setAttribute('alt', `Image for ${service.name}`);
+        img.setAttribute('width', '100');
+        img.setAttribute('height', '100');
 
         card.appendChild(name);
+        card.appendChild(img);
         element.appendChild(card);
     });
 }
