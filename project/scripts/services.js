@@ -85,8 +85,8 @@ function displayServices(array, element) {
         img.setAttribute('src', `${service.img}`);
         img.setAttribute('loading', 'lazy');
         img.setAttribute('alt', `Image for ${service.name}`);
-        img.setAttribute('width', '100');
-        img.setAttribute('height', '100');
+        img.setAttribute('width', '300');
+        img.setAttribute('height', '200');
         button.textContent = 'Show More';
         button.setAttribute('aria-label', 'Show More');
 
