@@ -71,19 +71,33 @@
         </nav>
     </header>
     <main>
-        <h1>Services</h1>
+        <section class="opener service">
+            <picture class="hero">
+                <source media="(min-width: 1024px)" srcset="images/services/services-large.jpg">
+                <source media="(min-width: 608px)" srcset="images/services/services-medium.jpg">
+                <img src="images/services/services-small.jpg" alt="Man typing at computer">
+            </picture>
+            <div class="service-header">
+                <h1>Services</h1>
+                <p>Let's find something that works for <strong>you.</strong></p>
+                <div class="down-button">
+                    <a href="#services" id="services">V V V</a>
+                </div>
+            </div>
+        </section>
         <div class="services">
-            <section class="service-container">
-                <h2>Need a new site? Check out these options.</h2>
-                <div id="siteBuilds"></div>
+            <h2>Here's what we have to offer</h2>
+            <section>
+                <h3>Need a new site? Check out these options.</h3>
+                <div id="siteBuilds" class="service-container"></div>
             </section>
-            <section class="service-container">
-                <h2>Already have a site? Let's give it an upgrade.</h2>
-                <div id="upgrades"></div>
+            <section>
+                <h3>Already have a site? Let's give it an upgrade.</h3>
+                <div id="upgrades" class="service-container"></div>
             </section>
-            <section class="service-container">
-                <h2>Check out some of our other options.</h2>
-                <div id="other"></div>
+            <section>
+                <h3>Check out some of our other options.</h3>
+                <div id="other" class="service-container"></div>
             </section>
         </div>
         <section class="final-cta">
@@ -91,6 +105,7 @@
             <p>Contact us today to find out how much you can save on your next project.</p>
             <a class="call-to-action" href="contact.html">Get a Quote</a>
         </section>
+        <dialog class="modal" id="infoModal"></dialog>
     </main>
     <footer>
         <div class="site-links">
@@ -100,7 +115,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <a href="index.html#top" class="scroll-button">^</a>
+        <a href="#top" class="scroll-button">^</a>
         <div class="footer-grid">
             <div class="social">
                 <p>Follow Us</p>

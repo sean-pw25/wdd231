@@ -4,21 +4,21 @@
             "name": "Single-Page Landing Page",
             "description": "A fully responsive, high-converting landing page optimized for all devices. Ideal for product launches, events, or local campaigns.",
             "price": "$299.00",
-            "img": "https://placehold.co/100x100",
+            "img": "https://placehold.co/100x200",
             "highlight": false
         },
         {
             "name": "Essential Business Site (3 Pages)",
             "description": "A clean, modern 3-page responsive site (Home, About, Contact) designed to build brand credibility and capture leads.",
             "price": "$599.00",
-            "img": "https://placehold.co/100x100",
+            "img": "https://placehold.co/100x200",
             "highlight": true
         },
         {
             "name": "Growth Business Package (5 Pages)",
             "description": "A complete 5-page responsive website featuring basic SEO setup, lead capture forms, and social media integration.",
             "price": "$999.00",
-            "img": "https://placehold.co/100x100",
+            "img": "https://placehold.co/100x200",
             "highlight": false
         }
     ],
@@ -45,13 +45,6 @@
             "highlight": false
         },
         {
-            "name": "SEO & Performance Optimization",
-            "description": "Boost site speed, optimize metadata for Google search rankings, and configure accessibility best practices.",
-            "price": "$199.00",
-            "img": "https://placehold.co/100x100",
-            "highlight": true
-        },
-        {
             "name": "Security & Backup Setup",
             "description": "Includes SSL configuration, anti-spam form protection, database backup setup, and basic security hardening.",
             "price": "$149.00",
@@ -64,6 +57,13 @@
             "price": "$99.00/page",
             "img": "https://placehold.co/100x100",
             "highlight": false
+        },
+        {
+            "name": "SEO & Performance Optimization",
+            "description": "Boost site speed, optimize metadata for Google search rankings, and configure accessibility best practices.",
+            "price": "$199.00",
+            "img": "https://placehold.co/100x100",
+            "highlight": true
         },
         {
             "name": "Google Analytics & Event Tracking",

@@ -247,14 +247,18 @@ footer>p {
     height: auto;
 }
 
-.opener .cta {
+.cta {
     position: absolute;
-    top: 26%;
-    background-color: var(--primary);
-    color: var(--secondary);
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    color: #f4f4f4;
     width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 2rem 4rem;
     text-align: center;
+    height: fit-content;
 }
 
 .opener h1 {
@@ -289,6 +293,7 @@ footer>p {
 
 .reviews {
     position: relative;
+    /* transform: translateY(-15%); */
 }
 
 .review-cont {
@@ -415,7 +420,51 @@ footer>p {
 
 /* SERVICES */
 
-main>h1 {
+.service-header {
     text-align: center;
+    padding: 3rem 0;
+    font-size: 1.2rem;
+}
+
+.down-button {
     font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    padding: 2rem 0 4rem 0;
+}
+
+.service {
+    height: auto;
+}
+
+.services {
+    text-align: center;
+    padding: 0 1rem 4rem 1rem;
+    border-bottom: 1px solid var(--primary-hover);
+}
+
+.services h2 {
+    font-size: 3rem;
+}
+
+.services h3 {
+    font-size: 2rem;
+    padding: 6rem 0 3rem 0;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 4rem;
+    row-gap: 2rem;
+    background-color: var(--primary-hover);
+    padding: 2rem;
+    border-radius: 32px;
+    border: 1px solid var(--secondary);
+}
+
+.service-item {
+    padding: 1rem;
+    min-width: 300px;
 }
