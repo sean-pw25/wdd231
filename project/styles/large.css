@@ -181,4 +181,8 @@
     .service-container {
         gap: 4rem;
     }
+
+    .modal {
+        max-width: 35%;
+    }
 }

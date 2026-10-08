@@ -32,7 +32,6 @@ function displayInfoModal(service) {
     infoModal.innerHTML = ``;
 
     // create description and price for modal
-    modalImg = document.createElement('img');
     modalHeader = document.createElement('h2');
     modalDescription = document.createElement('p');
     modalPrice = document.createElement('p');
@@ -41,11 +40,7 @@ function displayInfoModal(service) {
     modalHeader.textContent = `${service.name}`;
     modalDescription.textContent = `${service.description}`;
     modalPrice.textContent = `${service.price}`;
-    modalImg.setAttribute('src', `${service.img}`);
-    modalImg.setAttribute('loading', 'lazy');
-    modalImg.setAttribute('alt', `Image for ${service.name}`);
-    modalImg.setAttribute('width', '100');
-    modalImg.setAttribute('height', '100');
+    modalPrice.classList.add('price');
 
     // create close button
     const closeButton = document.createElement('button');
@@ -60,7 +55,6 @@ function displayInfoModal(service) {
     })
 
     // display the modal
-    infoModal.appendChild(modalImg);
     infoModal.appendChild(modalHeader);
     infoModal.appendChild(modalDescription);
     infoModal.appendChild(modalPrice);
@@ -81,6 +75,9 @@ function displayServices(array, element) {
         // update dom element properties
         card.classList.add('card');
         card.classList.add('service-item');
+        if (service.highlight === true) {
+            card.classList.add('highlight');
+        }
         name.textContent = service.name;
         img.setAttribute('src', `${service.img}`);
         img.setAttribute('loading', 'lazy');

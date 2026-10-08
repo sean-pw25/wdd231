@@ -468,6 +468,7 @@ footer>p {
     overflow: hidden;
     width: 300px;
     height: 350px;
+    position: relative;
 }
 
 .service-item h4 {
@@ -483,7 +484,60 @@ footer>p {
     border: 1px solid var(--secondary);
 }
 
-.service-item button:hover {
+.service-item button:hover,
+.modal button:hover {
     cursor: pointer;
     background-color: var(--primary-hover);
+}
+
+/* MODAL */
+.modal {
+    margin: auto;
+    max-width: 80%;
+    padding: 0;
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+.modal>* {
+    padding: 2rem;
+}
+
+.modal button {
+    padding: .5rem 2rem;
+    border-radius: 32px;
+    color: var(--secondary);
+    background-color: var(--primary);
+    border: 1px solid var(--secondary);
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+
+.modal h2 {
+    font-size: 2rem;
+}
+
+.modal p {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem 4rem;
+}
+
+.modal .price::before {
+    content: "Price: "
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 40%);
+}
+
+.highlight::before {
+    content: "Best Value!";
+    background-color: var(--accent-red);
+    padding: 1rem;
+    position: absolute;
+    color: #f4f4f4;
+    font-weight: bold;
 }
