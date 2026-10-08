@@ -78,35 +78,35 @@
             "name": "E-Commerce Web Shop",
             "description": "Complete online store setup including payment gateway integration (Stripe/PayPal), product catalog setup, and inventory management.",
             "price": "Contact for Quote",
-            "img": "https://placehold.co/100x100",
+            "img": "https://sean-pw25.github.io/wdd231/project/images/services/shopping-cart.jpg",
             "highlight": false
         },
         {
             "name": "Managed Hosting & Security",
             "description": "Reliable cloud hosting setup, SSL certificate renewal, domain management, and routine uptime monitoring.",
             "price": "$14.99/month",
-            "img": "https://placehold.co/100x100",
+            "img": "https://sean-pw25.github.io/wdd231/project/images/services/server.jpg",
             "highlight": false
         },
         {
             "name": "Maintenance & Content Care Plan",
             "description": "Includes hosting plus monthly software updates, content edits, automated daily backups, and priority support.",
             "price": "$49.99/month",
-            "img": "https://placehold.co/100x100",
+            "img": "https://sean-pw25.github.io/wdd231/project/images/services/server.jpg",
             "highlight": false
         },
         {
             "name": "Custom Full-Stack Application",
             "description": "Tailor-made web applications requiring custom databases, user authentication, third-party API integrations, or complex logic.",
             "price": "Contact for Quote",
-            "img": "https://placehold.co/100x100",
+            "img": "https://sean-pw25.github.io/wdd231/project/images/services/tablet.jpg",
             "highlight": false
         },
         {
             "name": "Domain & Business Email Setup",
             "description": "Complete setup of your custom domain DNS, SSL security certificates, and professional business email addresses (e.g., info@yourcompany.com).",
             "price": "$75.00",
-            "img": "https://placehold.co/100x100",
+            "img": "https://sean-pw25.github.io/wdd231/project/images/services/laptop.jpg",
             "highlight": false
         }
     ]
