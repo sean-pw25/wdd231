@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | RedEmber Web Design</title>
+    <meta name="description"
+        content="Welcome to our services page. Need a website or a simple site-makeover? We offer industry standard web-design at unbeatable prices!">
+    <meta name="author" content="Sean Wood">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+
+    <!-- open graph metadata -->
+    <meta property="og:title" content="Services | RedEmber Web Design">
+    <meta property="og:description"
+        content="Welcome to our services page. Need a website or a simple site-makeover? We offer industry standard web-design at unbeatable prices!">
+    <meta property="og:url" content="https://sean-pw25.github.io/wdd231/project/services.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="images/logo/red-ember-vertical-dark-mode.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="RedEmber Web Design">
+
+    <!-- twitter (x) metadata -->
+    <meta property="twitter:title" content="Services | RedEmber Web Design">
+    <meta property="twitter:description"
+        content="Welcome to our services page. Need a website or a simple site-makeover? We offer industry standard web-design at unbeatable prices!">
+    <meta property="twitter:url" content="https://sean-pw25.github.io/wdd231/project/services.html">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="images/logo/red-ember-vertical-dark-mode.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Javascript -->
+    <script type="module" src="scripts/global.js" defer></script>
+    <script src="scripts/services.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-bar">
+            <a class="header-logo" href="index.html">
+                <img id="headerLogo" src="images/logo/red-ember-horizontal.png" width="184" height="48"
+                    loading="lazy"></a>
+            <button id="hamButton" class="hamburger-button" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="navigation" id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button id="darkModeButton" class="dark-mode-button" aria-labe="Toggle Dark Mode"
+                title="Toggle Dark Theme"><img id="darkModeIcon" src="images/global/dark-theme.svg"
+                    alt="Toggle dark mode" width="40" height="40" loading="lazy"></button>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <img src="https://www.placehold.co/600x800" alt="">
+            </div>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for=""></label>
+                    <input type="text" name="first">
+                    <label for=""></label>
+                    <input type="text">
+                    <label for=""></label>
+                    <input type="text">
+                    <label for=""></label>
+                    <input type="text">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="site-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+        <a href="#top" class="scroll-button">^</a>
+        <div class="footer-grid">
+            <div class="social">
+                <p>Follow Us</p>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener"><img
+                                src="images/global/social/facebook.svg" alt="Facebook logo" loading="lazy"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank" rel="noopener"><img
+                                src="images/global/social/youtube.svg" alt="Youtube logo" loading="lazy"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener"><img
+                                src="images/global/social/linkedin.svg" alt="Linkedin logo" loading="lazy"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.github.com" target="_blank" rel="noopener"><img
+                                src="images/global/social/github.svg" alt="Github logo" loading="lazy"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com" target="_blank" rel="noopener"><img
+                                src="images/global/social/tiktok.svg" alt="Tiktok logo" loading="lazy"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="left">
+                <p id="copyright"></p>
+                <p>Sean Wood</p>
+            </div>
+            <div class="right">
+                <p>WDD231 Class Project</p>
+                <p>BYU-Pathway Worldwide</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
