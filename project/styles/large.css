@@ -185,4 +185,16 @@
     .modal {
         max-width: 35%;
     }
+
+    /* CONTACT US PAGE */
+    .contact {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .contact img {
+        display: block;
+    }
 }

@@ -44,15 +44,14 @@
 
     <!-- Javascript -->
     <script type="module" src="scripts/global.js" defer></script>
-    <script src="scripts/services.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="header-bar">
-            <a class="header-logo" href="index.html">
-                <img id="headerLogo" src="images/logo/red-ember-horizontal.png" width="184" height="48"
-                    loading="lazy"></a>
+            <a class="header-logo" href="index.html" aria-label="Home">
+                <img id="headerLogo" src="images/logo/red-ember-horizontal.png" width="184" height="48" loading="lazy"
+                    alt="RedEmber Web Design Logo"></a>
             <button id="hamButton" class="hamburger-button" aria-label="Toggle Navigation Menu">
                 <span></span>
                 <span></span>
@@ -71,22 +70,43 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="contact">
             <div>
-                <img src="https://www.placehold.co/600x800" alt="">
+                <h1>Contact Us</h1>
+                <img src="images/contact.jpg" alt="Person with laptop using a cell phone" loading="lazy">
             </div>
             <form method="get" action="thankyou.html">
-                <fieldset>
+                <fieldset class="personal-info">
                     <legend>Personal Information</legend>
-                    <label for=""></label>
-                    <input type="text" name="first">
-                    <label for=""></label>
-                    <input type="text">
-                    <label for=""></label>
-                    <input type="text">
-                    <label for=""></label>
-                    <input type="text">
+                    <label class="required" for="firstName">First Name</label>
+                    <input id="firstName" type="text" name="fname" required>
+                    <label class="required" for="lastName">Last Name</label>
+                    <input id="lastName" type="text" name="lname" required>
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="tel" name="phone" required>
+                    <label class="required" for="email">Email</label>
+                    <input id="email" type="email" name="email" required>
+                    <label for="organization">Organization</label>
+                    <input id="organization" type="text" name="organization">
                 </fieldset>
+                <fieldset class="reason">
+                    <legend class="required">Reason for Contact</legend>
+                    <label>Quote
+                        <input type="radio" name="reason" value="quote" required></label>
+                    <label>Inquiry
+                        <input type="radio" name="reason" value="inquiry" required></label>
+                    <label>Service
+                        <input type="radio" name="reason" value="service-request" required></label>
+                </fieldset>
+                <fieldset class="other">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="3" name="message" title="Message"></textarea>
+                    <label class="checkbox">Receive Emails for News and Offers
+                        <input type="checkbox" name="newsletter"></label>
+                    <input type="hidden" name="timestamp" id="timeStamp">
+                    <input class="submit" type="submit" value="Submit">
+                </fieldset>
+            </form>
             </form>
         </section>
     </main>
@@ -135,6 +155,10 @@
             </div>
         </div>
     </footer>
+    <script>
+        const formLoadTime = new Date();
+        const timeStamp = document.getElementById('timeStamp').setAttribute('value', `${formLoadTime.toLocaleString()}`);
+    </script>
 </body>
 
 </html>
