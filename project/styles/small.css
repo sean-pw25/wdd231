@@ -226,6 +226,10 @@ footer>p {
     padding: .5rem;
 }
 
+.demonstration {
+    border-bottom: 3px solid var(--accent-dark-red);
+}
+
 /* Other */
 .card {
     background-color: var(--card-background);
