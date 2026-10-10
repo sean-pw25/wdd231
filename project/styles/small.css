@@ -50,7 +50,6 @@ header {
     padding: .5rem 0;
     display: grid;
     grid-template-columns: auto 1fr;
-    z-index: 100;
     position: relative;
     z-index: 2;
 }
