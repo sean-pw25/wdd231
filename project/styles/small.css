@@ -164,12 +164,32 @@ header {
     background-image: radial-gradient(var(--primary-hover), var(--primary));
 }
 
+
+/* OTHER */
+
+.card {
+    background-color: var(--card-background);
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+}
+
+.border {
+    border: 1px solid var(--secondary);
+}
+
+.pad {
+    padding: 1rem
+}
+
+.text-center {
+    text-align: center;
+}
+
 /* Footer */
 footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     font-size: 1.2rem;
     padding-top: 1rem;
     border-top: 1px solid var(--primary-hover);
@@ -181,7 +201,6 @@ footer {
 }
 
 footer>p {
-    font-size: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -230,15 +249,6 @@ footer>p {
     border-bottom: 3px solid var(--accent-dark-red);
 }
 
-/* Other */
-.card {
-    background-color: var(--card-background);
-    border: 1px solid var(--secondary);
-    border-radius: 24px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
-}
-
-
 /* Home Page */
 
 .opener {
@@ -260,7 +270,6 @@ footer>p {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 2rem 4rem;
-    text-align: center;
     height: fit-content;
 }
 
@@ -270,7 +279,6 @@ footer>p {
 }
 
 .opener p {
-    padding: 1rem;
     text-shadow: 0 0 10px gray;
 }
 
@@ -318,7 +326,6 @@ footer>p {
 }
 
 .review-card {
-    padding: 1rem;
     color: var(--secondary);
     min-height: 100%;
 }
@@ -376,7 +383,6 @@ footer>p {
     padding: 3rem 0 2rem 0;
     border-top: 1px solid var(--primary-hover);
     border-bottom: 1px solid var(--primary-hover);
-    text-align: center;
 }
 
 .comparison h2 {
@@ -410,7 +416,6 @@ footer>p {
 
 .final-cta {
     padding: 2rem 2rem 4rem 2rem;
-    text-align: center;
 }
 
 .final-cta h2 {
@@ -424,7 +429,6 @@ footer>p {
 /* SERVICES */
 
 .service-header {
-    text-align: center;
     padding: 3rem 0;
     font-size: 1.2rem;
 }
@@ -441,7 +445,6 @@ footer>p {
 }
 
 .services {
-    text-align: center;
     padding: 0 1rem 4rem 1rem;
     border-bottom: 1px solid var(--primary-hover);
 }
@@ -464,7 +467,6 @@ footer>p {
     background-color: var(--primary-hover);
     padding: 2rem;
     border-radius: 32px;
-    border: 1px solid var(--secondary);
 }
 
 .service-item {
@@ -474,17 +476,11 @@ footer>p {
     position: relative;
 }
 
-.service-item h4 {
-    font-size: 1.1rem;
-    padding: 1rem;
-}
-
 .service-item button {
     padding: .5rem 1rem;
     border-radius: 16px;
     color: var(--secondary);
     background-color: var(--primary);
-    border: 1px solid var(--secondary);
 }
 
 .service-item button:hover,
@@ -498,10 +494,8 @@ footer>p {
     margin: auto;
     max-width: 80%;
     padding: 0;
-    text-align: center;
     background-color: var(--primary);
     color: var(--secondary);
-    border: 1px solid var(--secondary);
 }
 
 .modal>* {
@@ -513,7 +507,6 @@ footer>p {
     border-radius: 32px;
     color: var(--secondary);
     background-color: var(--primary);
-    border: 1px solid var(--secondary);
     margin-bottom: 4rem;
     font-size: 2rem;
 }
@@ -523,7 +516,6 @@ footer>p {
 }
 
 .modal p {
-    text-align: center;
     font-size: 1.2rem;
     padding: 2rem 4rem;
 }
@@ -553,19 +545,13 @@ footer>p {
     align-items: center;
 }
 
-.contact h1 {
-    text-align: center;
-}
-
 .contact img {
-    padding: 1rem;
     width: 90%;
     display: none;
 }
 
 form {
     margin: 1rem;
-    border: 1px solid var(--secondary);
     border-radius: 12px;
     padding: .5rem;
 }
@@ -595,7 +581,6 @@ input[type=email] {
 .personal-info input {
     height: 44px;
     border-radius: 24px;
-    border: 1px solid black;
 }
 
 .personal-info label {
@@ -626,14 +611,11 @@ textarea {
 }
 
 .checkbox {
-    padding: 1rem;
     display: grid;
     grid-template-columns: auto 1fr;
 }
 
 .submit {
-    border: 1px solid black;
-    padding: 1rem;
     margin: 1rem 0rem;
     border-radius: 1rem;
     background-color: #f4f4f4;
@@ -644,21 +626,15 @@ textarea {
     background-color: #d5d3d3;
 }
 
-.formMsg {
-    padding: 1rem;
+.form-message {
     max-width: 900px;
     margin: 2rem auto 4rem auto;
-    text-align: center;
 }
 
-.formMsg h1 {
+.form-message h1 {
     padding: 1rem 0 0 1rem;
 }
 
-.formMsg p {
-    padding: 1rem;
-}
-
-.formMsg .capitalize {
+.form-message .capitalize {
     text-transform: capitalize
 }

@@ -45,6 +45,7 @@ function displayInfoModal(service) {
     // create close button
     const closeButton = document.createElement('button');
     closeButton.textContent = 'Close';
+    closeButton.classList.add('border');
     closeButton.addEventListener('click', () => infoModal.close());
 
     // allow user to close modal by clicking anywhere outside of it
@@ -75,10 +76,12 @@ function displayServices(array, element) {
         // update dom element properties
         card.classList.add('card');
         card.classList.add('service-item');
+        card.classList.add('border');
         if (service.highlight === true) {
             card.classList.add('highlight');
         }
         name.textContent = service.name;
+        name.classList.add('pad');
         img.setAttribute('src', `${service.img}`);
         img.setAttribute('loading', 'lazy');
         img.setAttribute('alt', `Image for ${service.name}`);
@@ -86,6 +89,7 @@ function displayServices(array, element) {
         img.setAttribute('height', '200');
         button.textContent = 'Show More';
         button.setAttribute('aria-label', 'Show More');
+        button.classList.add('border');
 
 
         // append elements to card
