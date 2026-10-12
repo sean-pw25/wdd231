@@ -180,33 +180,6 @@ header {
     text-align: center;
 }
 
-.navigation li,
-footer,
-.comparison article p,
-.service-header,
-.modal p,
-fieldset {
-    font-size: 1.2rem;
-}
-
-.call-to-action,
-.dark .stars,
-legend {
-    font-size: 1.5rem;
-}
-
-.scroll-button,
-.comparison h2,
-.services h3,
-.modal button,
-.modal h2 {
-    font-size: 2rem;
-}
-
-.down-button,
-.services h2 {
-    font-size: 3rem;
-}
 
 .call-to-action,
 .service-container,
@@ -233,6 +206,30 @@ header,
 .carousel-dots,
 .reason {
     width: 100%;
+}
+
+.modal p,
+.dark-gray {
+    background-color: var(--primary-hover);
+}
+
+.font-small {
+    font-size: 1.2rem;
+}
+
+.font-medium {
+    font-size: 1.5rem;
+}
+
+.font-large,
+.modal-button,
+.modal h2 {
+    font-size: 2rem;
+}
+
+.down-button,
+.services h2 {
+    font-size: 3rem;
 }
 
 /* Footer */

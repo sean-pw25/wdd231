@@ -76,8 +76,8 @@
                 <img class="pad" src="images/contact.jpg" alt="Person with laptop using a cell phone" loading="lazy">
             </div>
             <form method="get" action="thankyou.html" class="border">
-                <fieldset class="personal-info">
-                    <legend>Personal Information</legend>
+                <fieldset class="personal-info font-small">
+                    <legend class="font-medium">Personal Information</legend>
                     <label class="required" for="firstName">First Name</label>
                     <input class="border" id="firstName" type="text" name="fname" required>
                     <label class="required" for="lastName">Last Name</label>
@@ -89,8 +89,8 @@
                     <label for="organization">Organization</label>
                     <input class="border" id="organization" type="text" name="organization">
                 </fieldset>
-                <fieldset class="reason">
-                    <legend class="required">Reason for Contact</legend>
+                <fieldset class="reason font-small">
+                    <legend class="required font-medium">Reason for Contact</legend>
                     <label>Quote
                         <input type="radio" name="reason" value="quote" required></label>
                     <label>Inquiry
@@ -98,7 +98,7 @@
                     <label>Service
                         <input type="radio" name="reason" value="service-request" required></label>
                 </fieldset>
-                <fieldset class="other">
+                <fieldset class="other font-small">
                     <label for="message">Message</label>
                     <textarea id="message" rows="3" name="message" title="Message"></textarea>
                     <label class="checkbox pad">Receive Emails for News and Offers
