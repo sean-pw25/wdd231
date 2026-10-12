@@ -29,12 +29,12 @@ async function fetchData() {
 
 function displayInfoModal(service) {
     // reset modal content
-    infoModal.innerHTML = ``;
+    infoModal.innerHTML = "";
 
     // create description and price for modal
-    modalHeader = document.createElement('h2');
-    modalDescription = document.createElement('p');
-    modalPrice = document.createElement('p');
+    const modalHeader = document.createElement('h2');
+    const modalDescription = document.createElement('p');
+    const modalPrice = document.createElement('p');
 
     // set content of modal to selected service
     modalHeader.textContent = `${service.name}`;
@@ -106,7 +106,7 @@ function displayServices(array, element) {
 }
 
 async function run() {
-    data = await fetchData();
+    const data = await fetchData();
     displayServices(data.siteBuilds, siteBuilds);
     displayServices(data.upgrades, upgrades);
     displayServices(data.other, other);
