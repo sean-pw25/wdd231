@@ -1,18 +1,42 @@
 @media only screen and (min-width: 75rem) {
 
+    /* GLOBAL */
+    .site-links,
+    .site-links a,
+    .down-button,
+    .contact img {
+        display: block
+    }
+
+    header,
+    .navigation ul,
+    footer,
+    .site-links ul,
+    .social,
+    .compare {
+        display: flex;
+    }
+
+    .page-info,
+    .footer-grid,
+    .review-cont,
+    .contact {
+        display: grid;
+    }
+
+    .hamburger-button,
+    .scroll-button {
+        display: none;
+    }
+
     /* HEADER */
     header {
         padding: 0rem;
-        display: flex;
         border-bottom: 1px solid var(--primary-hover);
     }
 
     .header-logo {
         margin: 0 1rem;
-    }
-
-    .hamburger-button {
-        display: none;
     }
 
     .navigation {
@@ -27,7 +51,6 @@
     }
 
     .navigation ul {
-        display: flex;
         flex-direction: row;
         margin: auto;
     }
@@ -51,34 +74,19 @@
 
     /* FOOTER */
 
-    footer {
-        display: flex;
-    }
-
-    .site-links {
-        display: block
-    }
-
     .site-links ul {
         list-style-type: none;
         justify-content: center;
-        display: flex;
         flex-direction: row;
     }
 
     .site-links a {
         width: 10rem;
         padding: 1rem 0;
-        display: block;
-    }
-
-    .scroll-button {
-        display: none;
     }
 
     .social {
         grid-column: 2/3;
-        display: flex;
         justify-content: center;
         align-items: center;
         border-bottom: none;
@@ -94,12 +102,10 @@
     }
 
     .page-info {
-        display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
     .footer-grid {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-items: baseline;
         margin: 0 2rem;
@@ -119,13 +125,8 @@
     }
 
     /* HOME PAGE */
-    .hero {
-        width: 100%;
-        height: auto;
-    }
 
     .review-cont {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 1800px;
         margin: auto;
@@ -144,7 +145,6 @@
     }
 
     .compare {
-        display: flex;
         justify-content: center;
         margin: auto;
         max-width: 1000px;
@@ -169,10 +169,6 @@
         font-size: 1.5rem;
     }
 
-    .down-button {
-        display: block;
-    }
-
     .services {
         max-width: 75vw;
         margin: auto;
@@ -190,11 +186,6 @@
     .contact {
         max-width: 1200px;
         margin: auto;
-        display: grid;
         grid-template-columns: auto auto;
-    }
-
-    .contact img {
-        display: block;
     }
 }
